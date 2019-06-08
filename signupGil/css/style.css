@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/cover.jpg);
+    background-size: cover;
+    background-position: center 80%;
+
+}
+
+.section {
+    /* position: absolute !important; */
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    
+}
+
+.section .card-panel
+{
+    position: relative !important;
+    width: 450px;
+    left: 50%;
+}

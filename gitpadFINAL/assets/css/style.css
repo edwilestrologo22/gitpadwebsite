@@ -1,0 +1,77 @@
+html {
+  box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+ 
+
+.brand-logo {
+  margin: 0 0 0 .5em;
+}
+
+#form1 {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.left {
+  margin: 0 .5em 0 11em;
+}
+
+#search {
+  width: 500px;
+}
+
+html {
+  box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+  
+  
+.card-tabs {
+  display: flex;
+}
+  
+.close {
+  display: flex;
+  position: relative;
+  bottom: -0.52em;
+  right: 0.25em;
+  cursor: pointer;
+}
+
+.carousel {
+  min-height: 439px !important;
+  
+}
+
+.slider .btn {
+  margin-top: 20px;
+
+}
+
+.section-search input {
+  padding: 5px !important;
+  font-size: 18px !important;
+  width: 90% !important;
+  border: #f4f4f4 3px solid !important;
+
+}
+
+.autocomplete-content {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+
+}
+
+.section-follow .fa-4x {
+  margin: 5px 10px;
+  
+}
+

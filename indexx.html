@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="fhil/css/materialize.min.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="fhil/css/main.css" />
+  
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitPad</title>
+</head>
+
+<body id="top">
+  <!-- Header -->
+  <header class="main-header">
+      <nav class="orange darken-4 navbar-fixed">
+          <div class="nav-wrapper">
+            <a href="#home" class="brand-logo"> &nbsp; &nbsp; Gitpad</a>
+            <a href="#" data-activates="mobile-nav" class="button-collapse">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="hide-on-med-and-down right">
+              <li><a class="dropdown-button" data-activates="my-dropdown1" href="#!">Browse<i class="material-icons right">arrow_drop_down</i></a></li>
+              <li>
+                <form id="navbarsearch">
+                  <div class="navfix">
+                    <div id="navfix2">
+                      <div class="input-field">
+                        <input id="search" type="search" placeholder="Search Here" required>
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </li>
+              <li ><a class="btn orange pulse"  href="signupGil/signup.html">Sign-Up</i></a></li>
+              <li ><a class="btn orange pulse modal-trigger"  href="#login">Login</i></a></li>
+              <!-- <a class="modal-trigger waves-effect waves-light" href="#login"></a> -->
+            </ul>
+          </div>
+        </nav>
+
+        <div class="modal" id="login">
+          <div class="modal-content">
+              <h4 class="center">Log in to Wattpad</h4><br>
+              <form action="#">
+                  <div class="input-field">
+                      <i class="material-icons prefix">person</i>
+                      <input type="text" id="username">
+                      <label for="username">Username</label>
+                  </div>
+                  <div class="input-field">
+                      <i class="material-icons prefix">lock</i>
+                      <input type="password" id="pass">
+                      <label for="pass">Password</label>
+                  </div>
+                  <div>
+                      <input type="checkbox" id="check">
+                      <label for="check">Remember Me</label>
+                  </div><br>
+              
+              <div class="modal-footer center ">
+                  <a href="gitpadFINAL/newsfeed.html" class="btn btn-large orange " style="width: 100%">login</a>
+              </div>
+          </form>
+      </div>
+      </div>
+
+
+        <ul id="mobile-nav" class="side-nav">
+            <li><div class="user-view">
+              
+              <a href="#user"><img class="circle" src="fhil/img/1.jpg"></a>
+              <a href="#name"><span class="black-text name">John Doe</span></a>
+              <a href="#email"><span class="black-text email">jdandturk@gmail.com</span></a>
+            </div></li>
+            <li><a href="#!"><i class="material-icons">dashboard</i>Dashboard</a></li>
+            <li><a href="#!">What's New?</a></li>
+            <li><div class="divider"></div></li>
+            <li>
+                <form>
+                  <div class="input-field">
+                    <input id="search" type="search" style="text-align: center;" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                  </div>
+                </form>
+            </li>
+            <li class="no-padding">
+              <ul class="collapsible collapsible-accordion">
+                <li><a class="collapsible-header">Browse<i class="material-icons">arrow_drop_down</i></a>
+                  <div class="collapsible-body">
+                    <ul>
+                      <li><a href="#!">Action</a></li>
+                      <li><a href="#!">Adventure</a></li>
+                      <li><a href="#!">Anime</a></li>
+                      <li><a href="#!">Horror</a></li>
+                      <li><a href="#!">Mystery</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li><div class="divider"></div></li>
+            <li class="no-padding">
+              <ul class="collapsible collapsible-accordion">
+                <li><a class="collapsible-header">Account Info<i class="material-icons">arrow_drop_down</i></a>
+                  <div class="collapsible-body">
+                    <ul>
+                      <li><a href="#!">Edit My Profile</a></li>
+                      <li><a href="#!">Account Settings</a></li>
+                      <li><a href="#!">Privacy Settings</a></li>
+                      <li><a href="#!">Logout</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- DROPDOWN MENU -->
+          <ul id="my-dropdown1" class="dropdown-content">
+            <li><a href="#!">Action</a></li>
+            <li><a href="#!">Adventure</a></li>
+            <li><a href="#!">Anime</a></li>
+            <li><a href="#!">Horror</a></li>
+            <li><a href="#!">Mystery</a></li>
+          </ul>
+      
+          <ul id="my-dropdown2" class="dropdown-content">
+            <li><a href="#!">Edit My Profile</a></li>
+            <li><a href="#!">Account Settings</a></li>
+            <li><a href="#!">Privacy Settings</a></li>
+            <li><a href="#!">Logout</a></li>
+          </ul>
+    <!-- Showcase -->
+    <section class="section view hm-gradient" id="intro">
+    <div class="showcase container">
+      <div class="row">
+        <div class="col s6 offset-m1 left">
+          <h5 class="#ff6d00 orange-text darken-4 center">Hi, we're Gitpad.</h5>
+          <h3 class="black-text">The world's most-loved social storytelling platform</h3>
+          <p class="black-text lighten-4">Wattpad connects a global community of 70 million readers and writers through the power of story.</p>
+        </div>
+          <br><br><br><br><br><br><br>
+          
+          <a href="signupGil/signup.html" class="btn btn-large #ff6d00 orange darken-4 white-text "><i class="fa fa-book"></i> Start Reading</a>
+          <a href="signupGil/signup.html" class="btn btn-large #ff6d00 orange darken-4 white-text"> Start Writing</a>
+          <!-- <a href="signup.html" class="btn btn-large purple white-text">Sign Up</a> -->
+          
+      </div>
+    </div>
+    </section>
+  </header>
+
+  <!-- Main content -->
+     <!-- CAROUSEL -->
+     <div class="content">
+     <div class="container">
+        <div class="row">
+          <div class="col s5 ">
+        <div class="carousel">
+        <a href="" class="carousel-item" href="#one!">
+          <img src="fhil/img/GOT.jpg">
+        </a>
+        <a href="" class="carousel-item" href="#two!">
+            <img src="fhil/img/killing.png">
+        </a>
+        <a href="" class="carousel-item" href="#three!">
+            <img src="fhil/img/odyssey.jpg">
+        </a>
+        <a href="" class="carousel-item" href="#four!">
+            <img src="fhil/img/Watching-You-pb-eb.jpg">
+        </a>
+        <a href="" class="carousel-item" href="#five!">
+            <img src="fhil/img/Rupert-Star_pb-eb.jpg">
+        </a>
+        </div>
+      </div>
+    
+        <div class="col s7">
+           
+            <h4 class="black-text">The world's most-loved social storytelling platform</h4>
+            <p class="grey-text">Wattpad Studios discovers untapped, unsigned, and talented writers on Wattpad and connects them to global multi-media entertainment companies. <a href="login.html" class="orange-text" target="blank">
+                Find out more </a>
+                <br>
+                <br>
+                <h5 class="black-text">SEE YOUR STORY...</h5></p>
+                <ul>
+                <li><i class="material-icons orange-text">call_to_action</i> &nbsp; Get published</li>
+                <li><i class="material-icons orange-text">camera_roll</i> &nbsp; Get produced to movie or film</li>
+                <li><i class="material-icons orange-text">live_tv</i> &nbsp; Get adapted to a TV series</li>
+              </ul>
+             
+          </div>
+        
+    </div>
+    </div>
+  
+  </div>
+  
+  <!-- Section: About -->
+  <section class="section section-about grey lighten-4">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center">
+          <h3 class="font-bold">How Wattpad Works</h3> Get your story discovered through the power of community and technology on Wattpad.
+          
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+
+          <div class="col s12 m4 l4">
+        <h3 class="orange-text"> 1 &nbsp; Create</h3>
+            
+            <p >Share your unique voice and original story on Wattpad. Find the writing resources you need to craft a story only you can tell.</p>
+        
+        </div>
+        <div class="col s12 m4 l4">
+        <h3 class="orange-text"> 2 &nbsp; Create</h3>
+            
+            <p >Establish a global fan base as your story gains readership and momentum. Connect with other like-minded writers through storytelling.</p>
+        
+        </div>
+        <div class="col s12 m4 l4">
+       <h3 class="orange-text"> 3 &nbsp; Create</h3>
+            
+            <p>Gain Wattpad Star status and get your story published or adapted into film or television with Wattpad Studios and Wattpad Books!</p>
+        
+      </div>
+      
+      
+    </div>
+    </div>
+  </section>
+  
+
+  <!-- Section: Testimonial -->
+  <section class="section section-testimonial grey lighten-4" >
+    <div class="container">
+      <div class="row" >
+
+        <div class="col s12 m6 l12" >
+          <div class="carousel carousel-slider  " style="height: 100vh;" >
+            
+
+          <div class="container" >
+            <div class="row">  
+              
+                <span class="carousel-item yellow lighten-4 " id="btn1" href="#one!">               
+                  <div class="col s3" >
+                    <span>
+                        <br>
+                      <div>
+                          <img src="fhil/img/World-Whisperer.jpg" style="width: 100%; height: 50%;">
+                          
+                   
+                      </div>
+                    
+                    <br>
+                    </span>
+                  </div>
+                    <div class="col s9">
+
+              <h2>World of Whisper</h2>
+              <p class="">
+                <b>Author:</b>  Rachel Devenish Ford
+                <br><b>Summary:</b> A devastating sacrifice. A daring rescue. A new world of magic unveiled. The people of the Worker village revere their walls, despise outsiders, and sacrifice their children to the waves when harvests fail. Isika is a fourteen-year-old outsider whose brother is about to be sacrificed.
+                <br><b>Genre:</b> Fantasy Fiction
+                <br><b>Published-date:</b> 10 April 2016
+                <br>
+                <br>
+                <br>
+                    <a href="#" class="btn blue lighten-2">$50.00</a>
+                    <a href="#btn2" class="btn-floating btn-large waves-effect waves-light blue lighten-3 pulse" style="margin-top:-40%; margin-left: 93%;"><i class="material-icons">arrow_right</i></a>
+                        
+              </p>
+                </div>
+              </span>
+              </div>
+             
+              <div class="row">  
+              
+                  <span class="carousel-item yellow lighten-2 " id="btn2" >               
+                    <div class="col s3" >
+                        <br>
+                      <span>
+                        <div>
+                            <img src="fhil/img/Rupert-Star_pb-eb.jpg" style="width: 100%; height: 50%;">
+                        </div>
+                      
+                      <br>
+                      </span>
+                    </div>
+                      <b class="col s9">
+  
+                <h2>RUPERT STAR Twelve Days to Twelve</h2>
+                <p class="flow-text">
+                  <b>Author:</b> Angie Francombe
+                  <br><b>Summary:</b>THIS IS THE STORY OF A BOY WHO DESIRED A CHANGE OF LIFE AND RECEIVED MORE THAN HE WISHED FOR. Rupert Star lives in a comfortable home with his difficult parents and a very annoying little sister who drives him crazy with complaints. Annoyed and fed up with his life, Rupert decides to escape
+                  <br><b>Genre:</b>
+                  <br><b>Published-date:</b>30 November 2017
+                  
+                  <br>
+                  <br>
+                      <a href="#" class="btn blue lighten-2">$35.00</a>
+                      <a href="#btn3" class="btn-floating btn-large waves-effect waves-light blue lighten-3 pulse" style="margin-top: -40%; margin-left: 93%;">
+                          <i class="material-icons">arrow_right</i></a>
+                  
+                </p>
+                  </div>
+                </span>
+                </div>
+            
+           
+                <div class="row">  
+              
+                    <span class="carousel-item yellow lighten-4 " id="btn3">               
+                      <div class="col s3" >
+                          <br>
+                        <span>
+                          <div>
+                              <img src="fhil/img/refugee.jpg" style="width: 100%; height: 50%;">
+                          </div>
+                        
+                        <br>
+                        </span>
+                      </div>
+                        <div class="col s9">
+    
+                  <h2>Refugee</h2>
+                  <p class="flow-text">
+                    <b>Author:</b>Alan Gratz
+                    <br><b>Summary:</b>Refugee is a young adult literature novel by Alan Gratz published in 2017. The book revolves around three main characters from three different eras; Nazi Germany, 1990s Cuba, and modern Syria. It received positive reviews that praised style and historical accuracy.<ref>Elizabeth Caulfield Felt. "Refugee
+                    <br><b>Genre: </b>Historical Fiction
+                    <br><b>Published-date:</ref>b>25 July 2017
+                    <br>
+                    <br>
+                        <a href="#" class="btn blue lighten-2">$90.00</a>
+                        <a href="#btn4" class="btn-floating btn-large waves-effect waves-light blue lighten-3 pulse" style="margin-top: -40%; margin-left: 93%;">
+                            <i class="material-icons">arrow_right</i></a>
+                    
+                  </p>
+                    </div>
+                  </span>
+                  </div>
+
+                  <div class="row">  
+              
+                      <span class="carousel-item yellow lighten-2 " id="btn4"  >               
+                        <div class="col s3" >
+                            <br>
+                          <span>
+                            <div>
+                                <img src="fhil/img/images.jpg" style="width: 100%; height: 50%;">
+                            </div>
+                          
+                          <br>
+                          </span>
+                        </div>
+                          <div class="col s9">
+      
+                    <h2>TALA Phoenix and the DRAGONS LAIR</h2>
+                    <p class="flow-text">
+                      <b>Author:</b> Gabby Fawkes
+                      <br><b>Summary:</b>My name is Tala Phoenix. I'm a dragon shifter. And I'm on the run.
+
+                      Quick catchup. I can fly. I'm dating a freaking Greek God. Oh, and apparently busting a gang of magic kids out of a creepy school means I'm in charge. Like I need that kind of pressure in my life. I can barely walk and breathe fire at the same time...
+                      <br><b>Genre:</b>Historical Fiction
+                      <br><b>Published-date:</b> May 8, 2019
+                      <br>
+                      <br>
+                          <a href="#" class="btn blue lighten-2">$10.99</a>
+                          <a href="#btn5" class="btn-floating btn-large waves-effect waves-light blue lighten-3 pulse" style="margin-top: -40%; margin-left: 93%;">
+                              <i class="material-icons">arrow_right</i></a>
+                      
+                    </p>
+                      </div>
+                    </span>
+                    </div>
+
+                    <div class="row">  
+              
+                        <span class="carousel-item yellow lighten-4 " id="btn5" >               
+                          <div class="col s3" >
+                            <span>
+                                <br>
+                              <div>
+                                  <img src="fhil/img/fantastic-beasts.jpg" style="width: 100%; height: 50%;">
+                              </div>
+                            
+                            <br>
+                            </span>
+                          </div>
+                            <div class="col s9">
+        
+                      <h2>FANTASTIC BEASTS</h2>
+                      <p class="flow-text">
+                        <b>Author:</b> James Newton Howard
+                        <br><b>Summary:</b> The Fantastic Beasts and Where to Find Them soundtrack is the soundtrack of the 2016 film of the same title, based on the book by J. K. Rowling. James Newton Howard composed the film's score
+                        <br><b>Genre:</b> Fiction
+                        <br><b>Published-date:</b> 18 November 2016
+                        <br>
+                        <br>
+                            <a href="#" class="btn blue lighten-2">$40.00</a>
+                            <a href="#btn6" class="btn-floating btn-large waves-effect waves-ligth blue lighten-3 pulse" style="margin-top: -40%; margin-left: 93%;">
+                                <i class="material-icons">arrow_right</i></a>
+                        
+                      </p>
+                        </div>
+                      </span>
+                      </div>
+                    <div class="row ">  
+              
+                        <span class="carousel-item yellow lighten-2 " id="btn6" >               
+                          <div class="col s3" >
+                            <span>
+                                <br>
+                              <div>
+                                  <img src="fhil/img/mermaid.jpg" style="width: 100%; height: 50%;">
+                              </div>
+                            
+                            <br>
+                            </span>
+                          </div>
+                            <div class="col s9">
+        
+                      <h2>Mermaid</h2>
+                      <p class="flow-text">
+                        <b>Author:</b>Hans Christian Andersen 
+                        <br><b>Summary:</b> "The Little Mermaid" is a fairy tale written by the Danish author Hans Christian Andersen. The story follows the journey of a young mermaid who is willing to give up her life in the sea and her identity as a mermaid to gain a human soul.
+                        <br><b>Genre:</b>  Fairy tale, Fiction
+                        <br><b>Published-date:</b> 7 April 1837
+                        <br>     
+                        <br>
+                            <a href="#" class="btn blue lighten-2">$5.00</a>
+                            <a href="#btn1" class="btn-floating btn-large waves-effect waves-ligth blue lighten-3 pulse" style="margin-top: -40%; margin-left: 93%;">
+                                <i class="material-icons">arrow_right</i></a>
+                        
+                      </p>
+                        </div>
+                      </span>
+                      </div>
+          
+      </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Card -->
+  <div class="container">
+  <div class="row">
+      <h4>Get New Discovered</h4>
+      <div class="col s4">
+        <div class="card">
+          <div class="card-image row1">
+            <img src="fhil/img/file.jpg" >
+            <a href="#abstract1" class="btn-floating halfway-fab waves-effect left waves-light red modal-trigger">
+                <i class="material-icons">book</i> 
+              </a>
+            
+          </div>
+          <div class="card-content center">
+            <h5 >Ever Marked (Shadow Guardians Book 1)</h6> <br> Kindle Edition
+          </div>
+          
+        </div>
+      </div>
+      <div class="col s4">
+        <div class="card">
+          <div class="card-image row2">
+            <img src="fhil/img/tessoftheroad.jpg">
+            <a href="#abstract2" class="btn-floating halfway-fab waves-effect left waves-light red modal-trigger">
+                <i class="material-icons">book</i> 
+              </a>
+          </div>
+          <div class="card-content center">
+            <h5>Tess of the Road</h5>
+            <h6>(Tess of the Road #1)</h6>
+            by Rachel Hartman (Goodreads Author)
+          </div>
+          
+        </div>
+      </div>
+      <div class="col s4">
+        <div class="card">
+          <div class="card-image row3">
+            <img src="fhil/img/death.jpg">
+            <a href="#abstract3" class="btn-floating halfway-fab waves-effect left waves-light red modal-trigger">
+                <i class="material-icons">book</i> 
+              </a>
+          </div>
+          <div class="card-content center">
+             <h5> 'Til Death Do Us Part</h5>
+              by Amanda Quick (Goodreads Author),  Jayne Ann Krentz (Goodreads Author)
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Card -->
+  <div class="container">
+  <div class="row">
+      <h4>Get Discovered</h4>
+      <div class="col s4">
+        <div class="card">
+          <div class="card-image row4">
+            <img src="fhil/img/astrally.jpg">
+            <a href="#abstract4" class="btn-floating halfway-fab waves-effect left waves-light red modal-trigger">
+                <i class="material-icons">book</i> 
+              </a>
+          </div>
+          <div class="card-content center">
+             <h5> Astrally Yours</h5>
+          by Alex Carreras (Goodreads Author) 
+          </div>
+          
+        </div>
+      </div>
+      <div class="col s4">
+        <div class="card">
+          <div class="card-image row5">
+            <img src="fhil/img/BOOK-COVER-DESIGN-IDEAS.jpg">
+            <a href="#abstract5" class="btn-floating halfway-fab waves-effect left waves-light red modal-trigger">
+                <i class="material-icons">book</i> 
+              </a>
+          </div>
+          <div class="card-content center">
+              <h5>The Detective </h5>
+              <h6>(novel)</h6>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col s4">
+        <div class="card">
+          <div class="card-image row6">
+            <img src="fhil/img/sunsetkisses.jpg">
+            <a href="#abstract6" class="btn-floating halfway-fab waves-effect left waves-light red modal-trigger">
+                <i class="material-icons">book</i> 
+              </a>
+          </div>
+          <div class="card-content center">
+              <h5>Sunset Kisses</h5>
+              by Angela Ford (Goodreads Author)
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+  <footer class="page-footer orange lighten-1 center-on-small-only pt-0 mt-0 ">
+    <div class="container center">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mb-5 flex-center wow zoomIn" data-wow-delay="0.6s">
+
+            
+                <a href="https://facebook.com" style="font-size: 40px;">
+                  &nbsp;  &nbsp;<i class="fab fa-facebook indigo-text darken-4 large waves-effect white"  ></i>
+                </a>
+              
+                <a href="https://twitter.com" style="font-size: 38px;">
+                  &nbsp; &nbsp;  <i class="fab fa-twitter blue-text waves-effect white" ></i>
+                </a>
+              
+                <a href="https://instagram.com" style="font-size: 40px;">
+                  &nbsp; &nbsp; <i class="fab fa-instagram  orange-text waves-effect white" ></i>
+                </a>
+              
+                <a href="https://instagram.com" style="font-size: 40px;">
+                  &nbsp; &nbsp; <i class="fab fa-google-plus red-text waves-effect white" ></i>
+                </a>
+              
+                <a href="https://instagram.com" style="font-size: 40px;">
+                  &nbsp; &nbsp; <i class="fab fa-linkedin black-text waves-effect white"></i>
+                </a>
+              
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright " >
+      <div class="container-fluid  " style="margin-left: 38%;" >
+        <p class="wow fadeInRight " data-wow-delay="0.5s"  >&copy; <a href="index.html" class="wow fadeInRight black-text font-bold" data-wow-delay="0.5s" >Yagit HUB-Team</a > - <i class="wow fadeInRight" data-wow-delay="0.5s">Design : </i><a href="#" class="wow fadeInRight black-text font-bold" data-wow-delay="0.5s">&nbsp; GitPad</a>
+         
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+<!-- modal 1: discover   -->
+  <div id="abstract1" class="modal">
+      <div class="modal-content">
+        <div class="row">
+          <div class="col l3 m12 s12 ">
+          <h5>Ever Marked</h4>
+          <img src="fhil/img/file.jpg" style="width:100%; height:100%;" alt="" class="responsive-img">
+          </div>
+          <div class="col l9 m12 s12 ">
+          <p>
+              Everything you thought you knew about Shape-shifters is a lie.
+
+              Shape-shifters are Shadow Guardians, ethereal animal spirits who protect humans from darkness. But not all Guardians are good.
+              
+              When 17-year-old Leila discovers a tattoo-like spiral on her arm, she learns she's been marked to become a Guardian. With fatal animal attacks and missing people on the rise, Leila fears that becoming a Guardian will turn her into a monster.
+              
+              Leila confides in her supernatural-loving friend, Riley. As they work together to stop her from turning, they must also navigate their growing feelings for each other. But as the details of her mark become clearer, things get complicated—if she doesn’t find the person who scarred her and turn soon, Leila is marked for death. 
+              
+              She must decide: to shift or die.
+              
+              Combining the folklores of shifters, angels, and werewolves, Ever Marked is "Teen Wolf" meets "The Mortal Instruments", creating a new myth for Urban Fantasy and Paranormal Romance lovers to sink their teeth into. Buy your copy to start the hunt today.
+        </p>
+        <div>
+           
+
+            <a href="" class="btn-primary">Read Full Stories</a>
+        </div>
+        </div>
+      </div>
+      <div class="modal-footer blue-text">
+       
+        <p>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+          <i class="material-icons">star</i>
+        </p>
+      </div>
+    </div>
+    </div>
+<!-- modal 2: discover   -->
+<div id="abstract2" class="modal">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col l3 m12 s12 ">
+      <h5>Tess of the Road</h4>
+      <img src="fhil/img/tessoftheroad.jpg" style="width:100%; height:100%;" alt="" class="responsive-img">
+      </div>
+      <div class="col l9 m12 s12 ">
+      <p>
+          Meet Tess, a brave new heroine from beloved epic fantasy author Rachel Hartman.
+
+          In the medieval kingdom of Goredd, women are expected to be ladies, men are their protectors, and dragons get to be whomever they want. Tess, stubbornly, is a troublemaker. You can’t make a scene at your sister’s wedding and break a relative’s nose with one punch (no matter how pompous he is) and not suffer the consequences. As her family plans to send her to a nunnery, Tess yanks on her boots and sets out on a journey across the Southlands, alone and pretending to be a boy.
+          
+          Where Tess is headed is a mystery, even to her. So when she runs into an old friend, it’s a stroke of luck. This friend is a quigutl—a subspecies of dragon—who gives her both a purpose and protection on the road. But Tess is guarding a troubling secret. Her tumultuous past is a heavy burden to carry, and the memories she’s tried to forget threaten to expose her to the world in more ways than one.
+          
+          Returning to the fascinating world she created in the award-winning and New York Times bestselling Seraphina, Rachel Hartman introduces readers to a new character and a new quest, pushing the boundaries of genre once again in this wholly original fantasy. 
+    
+    </p>
+    <div>
+           
+
+        <a href="" class="btn-primary">Read Full Stories</a>
+    </div>
+    </div>
+  </div>
+  <div class="modal-footer blue-text">
+    <p>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+    </p>
+  </div>
+</div>
+</div>
+<!-- modal 3: discover   -->
+<div id="abstract3" class="modal">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col l3 m12 s12 ">
+      <h5>TIL DEATH DO US PART</h4>
+      <img src="fhil/img/death.jpg" style="width:100%; height:100%;" alt="" class="responsive-img">
+      </div>
+      <div class="col l9 m12 s12 ">
+      <p>
+          The author of the New York Times bestseller Garden of Lies returns to Victorian London in an all-new novel of deadly obsession. 
+ 
+          Calista Langley operates an exclusive “introduction” agency in Victorian London, catering to respectable ladies and gentlemen who find themselves alone in the world. But now, a dangerously obsessed individual has begun sending her trinkets and gifts suitable only for those in deepest mourning—a black mirror, a funeral wreath, a ring set with black jet stone. Each is engraved with her initials.
+           
+          Desperate for help and fearing that the police will be of no assistance, Calista turns to Trent Hastings, a reclusive author of popular crime novels. Believing that Calista may be taking advantage of his lonely sister, who has become one of her clients, Trent doesn’t trust her. Scarred by his past, he’s learned to keep his emotions at bay, even as an instant attraction threatens his resolve.
+           
+          But as Trent and Calista comb through files of rejected clients in hopes of identifying her tormentor, it becomes clear that the danger may be coming from Calista’s own secret past—and that only her death will satisfy the stalker... 
+    
+    </p>
+    <div>
+           
+
+        <a href="" class="btn-primary">Read Full Stories</a>
+    </div>
+    </div>
+  </div>
+  <div class="modal-footer blue-text">
+    <p>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+    </p>
+  </div>
+</div>
+</div>
+<!-- modal 4s: discover   -->
+<div id="abstract4" class="modal">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col l3 m12 s12 ">
+      <h5>ASTRALLY YOURS</h4>
+      <img src="fhil/img/astrally.jpg" style="width:100%; height:100%;" alt="" class="responsive-img">
+      </div>
+      <div class="col l9 m12 s12 ">
+      <p>
+          An Aferrum Brotherhood Novella. 20,486 words. 
+          Caeli Aferrum found himself in the Midwest unsure what to expect from the human race. 
+          He was searching Earth for a partner he could call his own along with some of his brethren. After a few beers and a name change to, Kyle he found the curious creatures full of questions. They appeared less scary and a whole lot sexier, especially the one named Hank. 
+          
+          When Hank Cutter entered Rascals Bar the last thing he expected in his small town of North Fork, Kansas was to meet a man. There was only one gay man in town and that happened to be him. He finds himself faced with a startling truth: Kyle is actually a Ferrumis in search of a mate he intends to have for life on the spacecraft Fronza, a stolen Thorean ship manned by seven other aliens who are roaming the galaxy with no particular destination in mind. He knew love came in many different shapes and sizes, but did his have to have a smooth metallic-colored tail and a set of razor sharp fangs? 
+          
+          Can their love span species lines and quench the growing lust in Caeli in time to save him from his Needing? Or will Hank deny his growing feelings to stay safe and sound on good ol’ planet Earth? (less)
+    </p>
+    <div>
+           
+
+        <a href="" class="btn-primary">Read Full Stories</a>
+    </div>
+    </div>
+  </div>
+  <div class="modal-footer blue-text">
+    <p>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+    </p>
+  </div>
+</div>
+</div>
+<!-- modal 5: discover   -->
+<div id="abstract5" class="modal">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col l3 m12 s12 ">
+      <h5>THE DETECTIVE</h4>
+      <img src="fhil/img/BOOK-COVER-DESIGN-IDEAS.jpg" style="width:100%; height:100%;" alt="" class="responsive-img">
+      </div>
+      <div class="col l9 m12 s12 ">
+      <p>
+          Joe Leland, a private detective, begins investigating a case for the recently widowed Norma MacIver. Norma requests that Leland find out everything he can about her deceased husband. Norma requests Leland personally because her husband had mentioned knowing him in the past.
+
+          It turns out that Leland and Colin MacIver served in the same military unit during World War II, but at different times. Leland interviews Colin's first wife, his mother and the security guards at the track where Colin supposedly killed himself.
+          
+          Norma introduces Leland to her neighbor and former therapist, Dr. Wendell Roberts. During their conversation Wendell reveals that he knew Leland's wife. It turns out Wendell was friends with the man with whom Karen Leland had had an affair.
+          
+          As Leland's investigation deepens he uncovers evidence of corruption and murder. Eventually, Leland discovers that Colin was connected to a homicide during Leland's earlier life with the police department as a detective. During the investigation of Teddy Leikman's death, a confession was obtained from Felix Tesla, Leikman's roommate. Tesla was subsequently executed by electric chair. It turned out that Colin MacIver was the true murderer. Joe's partner, Mike Petrakis, managed to decipher Colin's coded notes and reveal a paper trail of corruption.
+    
+    </p>
+    <div>
+           
+
+        <a href="" class="btn-primary">Read Full Stories</a>
+    </div>
+    </div>
+  </div>
+  <div class="modal-footer blue-text">
+    <p>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+    </p>
+  </div>
+</div>
+</div>
+<!-- modal 6: discover   -->
+<div id="abstract6" class="modal">
+  <div class="modal-content">
+    <div class="row">
+      <div class="col l3 m12 s12 ">
+      <h5>SUNSET KISSES</h5>
+      <img src="fhil/img/sunsetkisses.jpg" style="width:100%; height:100%;" alt="" class="responsive-img">
+      </div>
+      <div class="col l9 m12 s12 ">
+      <p>
+          Alivia Jones yearned for success, or so she thought. A full scholarship to Columbia took her out of the small dull town she grew up in. There she left her childhood sweetheart Jacob Adams broken-hearted and never looked back; until an invitation for her tenth reunion arrived. 
+
+          On her climb to success on Wall Street she sold her soul to the CEO of Financial Freedom, Brent Atwood. Rich, successful with a body no woman could deny; he wanted Alivia and she wanted his signature on her paycheck. Her emotional struggle to stay with him tore her apart until she finally realized and admitted that he did not own her. His threat to ruin her on Wall Street no longer scared her. She quit her job, ended her arrangement with Brent and left to meet her best friends in Sunset Beach for their reunion. 
+          
+          Her hesitation to see Jacob again disappeared with a reunion under the tall oak at sunset. One sunset, one kiss reunites a love that never left her heart. Will sunset kisses and one crazy idea keep Alivia in Sunset Beach? 
+    
+    </p>
+    <div>
+           
+
+        <a href="" class="btn-primary">Read Full Stories</a>
+    </div>
+    </div>
+  </div>
+  <div class="modal-footer blue-text">
+    <p>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+    </p>
+  </div>
+</div>
+</div>
+
+
+  <!-- Login Modal -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <h4>Account Login</h4>f
+      <p>Login to access your account dashboard</p>
+      <form>
+        <div class="input-field">
+          <input type="email" id="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password">
+          <label for="password">Password</label>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close btn grey">
+        <i class="fa fa-sync"></i> Reset Password</a>
+      <a href="#!" class="modal-action modal-close btn purple">
+        <i class="fa fa-lock"></i> Login</a>
+    </div>
+  </div>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="fhil/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="fhil/js/popper.min.js"></script>
+  <script type="text/javascript" src="fhil/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="fhil/js/mdb.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="fhil/js/materialize.min.js"></script>
+  
+  <script>
+    $(document).ready(function () {
+      $('.carousel.carousel-slider').carousel({ fullWidth: true });
+      $('.button-collapse').sideNav();
+      $('.modal').modal();
+    
+     //carousel
+     $('.carousel').carousel();
+
+     $('.parallax').parallax();
+    
+
+    var trig = 1;
+    //fix for chrome
+    $("#search").addClass('searchbarfix');
+    //animate searchbar width increase to  +150%
+    $('#search').click(function(e) {
+    //handle other nav elements visibility here to avoid push down 
+    $('.search-hide').addClass('hide');
+    if (trig == 1){
+      $('#navfix2').animate({
+        width: '+=150',
+        marginRight: 0
+      }, 400);
+      trig ++; 
+    }
+  });
+
+  $("#search").focusout(function() {
+    $('#navfix2').animate({
+      width: '-=150'
+    }, 400);
+    trig = trig - 1;
+    
+    //handle other nav elements visibility first to avoid push down
+    $('.search-hide').removeClass('hide');
+    });
+
+    $('.sidenav').sideNav();
+
+    $('.dropdown-button').dropdown({
+      constrainWidth: false,
+      hover: false,
+      belowOrigin: true,
+      alignment: 'left'
+    });
+
+  });
+   
+  </script>
+</body>
+
+</html>

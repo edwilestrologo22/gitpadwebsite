@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css" media="screen,projection">
+  <link type="text/css" rel="stylesheet" href="assets/css/test.css">
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY PROFILE</title>
+</head>
+<body>
+  <header>
+    <nav class="orange darken-4">
+      <div class="nav-wrapper">
+        <a href="#home" class="brand-logo">Gitpad</a>
+        <a href="#" data-activates="mobile-nav" class="button-collapse">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="hide-on-med-and-down right">
+          <li><a class="dropdown-button" data-activates="my-dropdown1" href="#!">Browse<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li>
+            <form id="navbarsearch">
+              <div class="navfix">
+                <div id="navfix2">
+                  <div class="input-field">
+                    <input id="search" type="search" placeholder="Search Here" required>
+                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    <i class="material-icons">close</i>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </li>
+          <li ><a class="dropdown-button" data-activates="my-dropdown2" href="#!">jdandturk@gmail.com<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+      </div>
+    </nav>
+    <ul id="mobile-nav" class="side-nav">
+      <li><div class="user-view">
+        <div class="background"><img src="lib/bg/10.jpg" class="responsive-img"></div>
+        <a href="#user"><img class="circle" src="lib/img/user.jpg"></a>
+        <a href="#name"><span class="white-text name">Clown Caesar</span></a>
+        <a href="#email"><span class="white-text email">ClownCaesar@gmail.com</span></a>
+      </div></li>
+      <li><a href="#!"><i class="material-icons">dashboard</i>Dashboard</a></li>
+      <li><a href="#!">What's New?</a></li>
+      <li><div class="divider"></div></li>
+      <li>
+          <form>
+            <div class="input-field">
+              <input id="search" type="search" style="text-align: center;" required>
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+      </li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li><a class="collapsible-header">Browse<i class="material-icons">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">Action</a></li>
+                <li><a href="#!">Adventure</a></li>
+                <li><a href="#!">Anime</a></li>
+                <li><a href="#!">Horror</a></li>
+                <li><a href="#!">Mystery</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li><div class="divider"></div></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li><a class="collapsible-header">Account Info<i class="material-icons">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">Edit My Profile</a></li>
+                <li><a href="#!">Account Settings</a></li>
+                <li><a href="#!">Privacy Settings</a></li>
+                <li><a href="#!">Logout</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <!-- DROPDOWN MENU -->
+    <ul id="my-dropdown1" class="dropdown-content">
+      <li><a href="#!">Action</a></li>
+      <li><a href="#!">Adventure</a></li>
+      <li><a href="#!">Anime</a></li>
+      <li><a href="#!">Horror</a></li>
+      <li><a href="#!">Mystery</a></li>
+    </ul>
+
+    <ul id="my-dropdown2" class="dropdown-content">
+      <li><a href="#!">Edit My Profile</a></li>
+      <li><a href="#!">Account Settings</a></li>
+      <li><a href="#!">Privacy Settings</a></li>
+      <li><a href="#!">Logout</a></li>
+    </ul>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m11">
+          <!-- Section 1: Paid Stories -->
+          <div class="row">
+            <h3>Paid Stories</h3>
+            <p>Become a supporter and help your favourite writers earn money.</p>
+            <div class="section scrollspy carousel" id="carousel1">
+              <div class="carousel-item item1">
+                <div class="card horizontal medium grow">
+                  <div class="card-image"><img src="lib/books/1.jpg"></div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <h3 class="card-title">Me</h3>
+                      <h5 class="card-author">You</h5>
+                      <p class="card-body">test</p>
+                      <div class="card-action"><a href="#">Purchase Story</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item item1">
+                <div class="card horizontal medium grow">
+                  <div class="card-image"><img src="lib/books/2.jpg"></div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <h3 class="card-title">Me</h3>
+                      <h5 class="card-author">You</h5>
+                      <p class="card-body">test</p>
+                      <div class="card-action"><a href="#">Purchase Story</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item item1">
+                <div class="card horizontal medium grow">
+                  <div class="card-image"><img src="lib/books/3.jpg"></div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <h3 class="card-title">Me</h3>
+                      <h5 class="card-author">You</h5>
+                      <p class="card-body">test</p>
+                      <div class="card-action"><a href="#">Purchase Story</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item item1">
+                <div class="card horizontal medium grow">
+                  <div class="card-image"><img src="lib/books/4.jpg"></div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <h3 class="card-title">Me</h3>
+                      <h5 class="card-author">You</h5>
+                      <p class="card-body">test</p>
+                      <div class="card-action"><a href="#">Purchase Story</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item item1">
+                <div class="card horizontal medium grow">
+                  <div class="card-image"><img src="lib/books/5.jpg"></div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <h3 class="card-title">Me</h3>
+                      <h5 class="card-author">You</h5>
+                      <p class="card-body">test</p>
+                      <div class="card-action"><a href="#">Purchase Story</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>    
+            </div>
+          </div>
+
+          <br>
+          <hr>
+          <br>
+
+          <div class="parallax-container">
+            <div class="parallax hero-image">
+              <img src="lib/bg/2.jpg">
+              <div class="hero-text">
+                <h3>Recommendations</h3>
+                <p>A new set of stories, only for you. ♥</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Recommendations -->
+          <div class="row">          
+            <div class="section scrollspy carousel" id="carousel2">
+              <div class="carousel-item item2">
+                <div class="card sticky-action grow1">
+                  <div class="card-image"><img src="lib/books/21.jpg" class="responsive-img"></div>
+                  <div class="card-content">
+                    <h3 class="card-title">Me</h3>
+                    <h5 class="card-author">You</h5>
+                    <p class="card-body">test</p>
+                    <div class="card-action"><a href="#">Purchase Story</a></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item item2">
+                <div class="card sticky-action grow1">
+                  <div class="card-image"><img src="lib/books/7.jpg"></div>
+                  <div class="card-content">
+                    <h3 class="card-title">Me</h3>
+                    <h5 class="card-author">You</h5>
+                    <p class="card-body">test</p>
+                    <div class="card-action"><a href="#">Purchase Story</a></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item item2">
+                <div class="card sticky-action grow1">
+                  <div class="card-image"><img src="lib/books/20.jpg"></div>
+                  <div class="card-content">
+                    <h3 class="card-title">Me</h3>
+                    <h5 class="card-author">You</h5>
+                    <p class="card-body">test</p>
+                    <div class="card-action"><a href="#">Purchase Story</a></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item item2">
+                <div class="card sticky-action grow1">
+                  <div class="card-image"><img src="lib/books/9.jpg"></div>
+                  <div class="card-content">
+                    <h3 class="card-title">Me</h3>
+                    <h5 class="card-author">You</h5>
+                    <p class="card-body">test</p>
+                    <div class="card-action"><a href="#">Purchase Story</a></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item item2">
+                <div class="card sticky-action grow1">
+                  <div class="card-image"><img src="lib/books/10.jpg"></div>
+                  <div class="card-content">
+                    <h3 class="card-title">Me</h3>
+                    <h5 class="card-author">You</h5>
+                    <p class="card-body">test</p>
+                    <div class="card-action"><a href="#">Purchase Story</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br>
+          <hr>
+          <br>
+
+          <div class="parallax-container">
+            <div class="parallax hero-image1">
+              <img src="lib/bg/7.jpg">
+            </div>
+          </div>
+
+          <!-- Section 3: Editor's Choice -->
+          <div class="section row">
+            <ul class="collection" style="border: none;">
+              <li class="collection-item avatar">
+                <img src="lib/img/sogo1.jpg" class="circle">
+                <span class="title" style="display: flex;">Editor's Choice <i class="material-icons">keyboard_arrow_right</i></span>
+                <p>A reading list by Wattpad The Great Bot for one and only you. ♥</p>
+                <iframe src="https://platform.twitter.com/widgets/follow_button.html?screen_name=TwitterDev&show_screen_name=false&show_count=false&size=l" title="Follow TwitterDev on Twitter" style="border: 0; overflow: hidden;height: 40px;"></iframe>
+              </li>
+            </ul>
+
+            <div class="section scrollspy carousel" id="carousel3">
+              <div class="carousel-item item3">
+                <div class="card horizontal medium grow2">
+                  <div class="card-image"><img src="lib/books/11.jpg"></div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <h3 class="card-title">Me</h3>
+                      <h5 class="card-author">You</h5>
+                      <p class="card-body">test</p>
+                      <div class="card-action"><a href="#">Purchase Story</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item item3">
+                <div class="card horizontal medium grow2">
+                  <div class="card-image"><img src="lib/books/12.jpg"></div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <h3 class="card-title">Me</h3>
+                      <h5 class="card-author">You</h5>
+                      <p class="card-body">test</p>
+                      <div class="card-action"><a href="#">Purchase Story</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item item3">
+                <div class="card horizontal medium grow2">
+                  <div class="card-image"><img src="lib/books/13.jpg"></div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <h3 class="card-title">Me</h3>
+                      <h5 class="card-author">You</h5>
+                      <p class="card-body">test</p>
+                      <div class="card-action"><a href="#">Purchase Story</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item item3">
+                <div class="card horizontal medium grow2">
+                  <div class="card-image"><img src="lib/books/14.jpg"></div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <h3 class="card-title">Me</h3>
+                      <h5 class="card-author">You</h5>
+                      <p class="card-body">test</p>
+                      <div class="card-action"><a href="#">Purchase Story</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item item3">
+                <div class="card horizontal medium grow2">
+                  <div class="card-image"><img src="lib/books/15.jpg"></div>
+                  <div class="card-stacked">
+                    <div class="card-content">
+                      <h3 class="card-title">Me</h3>
+                      <h5 class="card-author">You</h5>
+                      <p class="card-body">test</p>
+                      <div class="card-action"><a href="#">Purchase Story</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <br>
+          <hr>
+          <br>
+
+          <div class="parallax-container">
+            <div class="parallax hero-image1">
+              <img src="lib/bg/hot.jpg">
+              <div class="hero-text">
+                <h3>Hottest Stories tagged #wattyu2019</h3>
+                <p>A tag for a hot night. <i class="material-icons" style="font-size: 20px;">whatshot</i></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 4: Tags -->
+          <div class="section row">
+            <div class="section scrollspy carousel" id="carousel4">
+              <div class="carousel-item item4">
+                <div class="card sticky-action grow1">
+                  <div class="card-image"><img src="lib/books/16.jpg"></div>
+                  <div class="card-content">
+                    <h3 class="card-title">Me</h3>
+                    <h5 class="card-author">You</h5>
+                    <p class="card-body">test</p>
+                    <div class="card-action"><a href="#">Purchase Story</a></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item item4">
+                <div class="card sticky-action grow1">
+                  <div class="card-image"><img src="lib/books/22.jpg"></div>
+                  <div class="card-content">
+                    <h3 class="card-title">Me</h3>
+                    <h5 class="card-author">You</h5>
+                    <p class="card-body">test</p>
+                    <div class="card-action"><a href="#">Purchase Story</a></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item item4">
+                <div class="card sticky-action grow1">
+                  <div class="card-image"><img src="lib/books/18.jpg"></div>
+                  <div class="card-content">
+                    <h3 class="card-title">Me</h3>
+                    <h5 class="card-author">You</h5>
+                    <p class="card-body">test</p>
+                    <div class="card-action"><a href="#">Purchase Story</a></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item item4">
+                <div class="card sticky-action grow1">
+                  <div class="card-image"><img src="lib/books/19.jpg"></div>
+                  <div class="card-content">
+                    <h3 class="card-title">Me</h3>
+                    <h5 class="card-author">You</h5>
+                    <p class="card-body">test</p>
+                    <div class="card-action"><a href="#">Purchase Story</a></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item item4">
+                <div class="card sticky-action grow1">
+                  <div class="card-image"><img src="lib/books/20.jpg"></div>
+                  <div class="card-content">
+                    <h3 class="card-title">Me</h3>
+                    <h5 class="card-author">You</h5>
+                    <p class="card-body">test</p>
+                    <div class="card-action"><a href="#">Purchase Story</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <hr>
+          <br>
+
+          <div class="parallax-container">
+            <div class="parallax hero-image">
+              <img src="lib/bg/22.jpg">
+            </div>
+          </div>
+
+
+        </div>
+
+      <!-- Scroll Spy -->
+      <div class="col hide-on-small-only m1">
+        <ul class="pinned section table-of-contents">
+          <li><a href="#carousel1">Paid Stories</a></li>
+          <li><a href="#carousel2">Recommendations</a></li>
+          <li><a href="#carousel3">Editor's Choice</a></li>
+          <li><a href="#carousel4">Hottest Stories</a></li>
+        </ul>
+      <a class="btn-floating btn-large waves-effect waves-light orange darken-4 pulse" id="scroll"><span></span></a>
+      </div>
+
+      </div>
+    </div>
+
+    <!-- Back to Top Button -->
+  </main>
+    
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+<!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+<script type="text/javascript" src="assets/js/materialize.min.js"></script>
+<!-- Vanilla Js -->
+<script type="text/javascript" src="assets/js/script.js"></script>
+      
+<!-- Oher Scripts -->
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.parallax').parallax();
+
+    var trig = 1;
+    //fix for chrome
+    $("#search").addClass('searchbarfix');
+    //animate searchbar width increase to  +150%
+    $('#search').click(function(e) {
+    //handle other nav elements visibility here to avoid push down 
+    $('.search-hide').addClass('hide');
+    if (trig == 1){
+      $('#navfix2').animate({
+        width: '+=150',
+        marginRight: 0
+      }, 400);
+      trig ++; 
+    }
+  });
+
+  // if user leaves the form the width will go back to original state
+
+  $("#search").focusout(function() {
+    $('#navfix2').animate({
+      width: '-=150'
+    }, 400);
+    trig = trig - 1;
+    
+    //handle other nav elements visibility first to avoid push down
+    $('.search-hide').removeClass('hide');
+    });
+
+    $('.scrollspy').scrollSpy();
+
+    $('.tabs').tabs();
+    // Init Side nav
+    $('.button-collapse').sideNav();
+
+    $('.sidenav').sideNav();
+
+    $('.dropdown-button').dropdown({
+      constrainWidth: false,
+      hover: false,
+      belowOrigin: true,
+      alignment: 'left'
+    });
+
+    $('#carousel1').carousel({
+      indicators: true,
+      dist: 30,
+      shift: 180,
+      padding: 15
+    });
+    $('#carousel2').carousel({
+      dist: 0,
+      shift: 0,
+      padding: 250,
+    });
+    $('#carousel3').carousel({
+      indicators: true,
+      dist: -100,
+      shift: 125,
+      padding: 150
+    });
+    $('#carousel4').carousel({
+      dist: 0,
+      shift: 0,
+      padding: 250,
+    });
+
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 80) { 
+            $('#scroll').fadeIn(); 
+        } else { 
+            $('#scroll').fadeOut(); 
+        } 
+    }); 
+    $('#scroll').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    }); 
+  });
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+      
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GitPad</title>
+      </head>
+<body>
+
+    <!-- RESPONSIVE WITH SIDE MENU -->
+    
+    <div class="navbar-fixed">
+  <nav class="blue darken-4 #ff8f00 amber darken-3">
+        <a href="#" class="brand-logo">GitPad</a>
+    <div class="container">
+      <div class="nav-wrapper">
+        <a class="button-collapse" data-activates="mobile-nav" href="#">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+            
+            <!-- DROPDOWN TRIGGER -->
+          <li>
+                <a class="dropdown-button" data-activates="my-dropdown" href="#!">Browse
+                  <i class="material-icons right">arrow_drop_down</i>
+                </a>
+              </li>
+          <li>
+              
+            <a href="#">Writer opportunities</a>
+          </li>
+          <li>
+                <a class="dropdown-button" data-activates="my-dropdown" href="#!">Community
+                        <i class="material-icons right">arrow_drop_down</i>
+                </a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+                <i class="material-icons">search</i>
+                <li>
+                <div class="input-field inline" >
+                   
+                  <input id="users" type="text"  placeholder="Search">
+                 
+                </div>
+            </li>
+          </li>
+          
+   
+          
+          <!-- BUTTON LINK -->
+          <li>
+            <a class="btn waves-effect waves-light #ffd180 orange accent-1 black-text">Login</a>
+          </li>
+          <!-- ICON LINK -->
+          <li>
+            <a href="#">
+              <i class="material-icons">person</i>
+            </a>
+          </li>
+        </ul>
+        
+        <ul id="mobile-nav" class="side-nav">
+                <li><div class="user-view">
+                  <div class="background"><img src="images/office.jpg"></div>
+                  <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                  <a href="#name"><span class="white-text name">John Doe</span></a>
+                  <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                </div></li>
+                <li><a href="#!"><i class="material-icons">dashboard</i>Dashboard</a></li>
+                <li><a href="#!">What's New?</a></li>
+                <li><div class="divider"></div></li>
+                <li>
+                  <form>
+                    <div class="input-field">
+                      <input type="search" id="search" required>
+                      <label for="search" class="label-icon">
+                        <i class="material-icons">search</i>
+                      </label>
+                      <i class="material-icons">close</i>
+                    </div>
+                  </form>
+                </li>
+                <li class="no-padding">
+                  <ul class="collapsible collapsible-accordion">
+                    <li><a class="collapsible-header">Browse<i class="material-icons">arrow_drop_down</i></a>
+                      <div class="collapsible-body">
+                        <ul>
+                          <li><a href="#!">Action</a></li>
+                          <li><a href="#!">Adventure</a></li>
+                          <li><a href="#!">Anime</a></li>
+                          <li><a href="#!">Horror</a></li>
+                          <li><a href="#!">Mystery</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li><div class="divider"></div></li>
+                <li class="no-padding">
+                  <ul class="collapsible collapsible-accordion">
+                    <li><a class="collapsible-header">Account Info<i class="material-icons">arrow_drop_down</i></a>
+                      <div class="collapsible-body">
+                        <ul>
+                          <li><a href="#!">Edit My Profile</a></li>
+                          <li><a href="#!">Account Settings</a></li>
+                          <li><a href="#!">Privacy Settings</a></li>
+                          <li><a href="#!">Logout</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+      
+              <ul id="mobile-nav" class="side-nav">
+                    <li><div class="user-view">
+                      <div class="background"><img src="images/office.jpg"></div>
+                      <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                      <a href="#name"><span class="white-text name">John Doe</span></a>
+                      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                    </div></li>
+                    <li><a href="#!"><i class="material-icons">dashboard</i>Dashboard</a></li>
+                    <li><a href="#!">What's New?</a></li>
+                    <li><div class="divider"></div></li>
+                    <li>
+                      <form>
+                        <div class="input-field">
+                          <input type="search" id="search" required>
+                          <label for="search" class="label-icon">
+                            <i class="material-icons">search</i>
+                          </label>
+                          <i class="material-icons">close</i>
+                        </div>
+                      </form>
+                    </li>
+                    <li class="no-padding">
+                      <ul class="collapsible collapsible-accordion">
+                        <li><a class="collapsible-header">Browse<i class="material-icons">arrow_drop_down</i></a>
+                          <div class="collapsible-body">
+                            <ul>
+                              <li><a href="#!">Action</a></li>
+                              <li><a href="#!">Adventure</a></li>
+                              <li><a href="#!">Anime</a></li>
+                              <li><a href="#!">Horror</a></li>
+                              <li><a href="#!">Mystery</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><div class="divider"></div></li>
+                    <li class="no-padding">
+                      <ul class="collapsible collapsible-accordion">
+                        <li><a class="collapsible-header">Account Info<i class="material-icons">arrow_drop_down</i></a>
+                          <div class="collapsible-body">
+                            <ul>
+                              <li><a href="#!">Edit My Profile</a></li>
+                              <li><a href="#!">Account Settings</a></li>
+                              <li><a href="#!">Privacy Settings</a></li>
+                              <li><a href="#!">Logout</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+  <!-- DROPDOWN MENU For Browse-->
+  <ul id="my-dropdown" class="dropdown-content">
+        <div class="row">
+            <div class="col s6 m6">
+        <li>
+          <a href="#">Link 1</a>
+        </li>
+        <li>
+          <a href="#">Link 2</a>
+        </li>
+        <li>
+          <a href="#">Link 3</a>
+        </li>
+        <li>
+          <a href="#">Link asdasdasdas3</a>
+        </li>
+            </div>
+            <div class="col s6 m6">
+        <li>
+          <a href="#">Link 1</a>
+        </li>
+        <li>
+          <a href="#">Link 2</a>
+        </li>
+        <li>
+          <a href="#">Link 3</a>
+        </li>
+        <li>
+          <a href="#">Link asdasdasdas3</a>
+        </li>
+            </div>
+        </div>
+    </ul>
+    
+    <div class="col s6 m6" >
+        <ul id="my-dropdown" class="dropdown-content">
+        <li>
+          <a href="#">Link 1</a>
+        </li>
+        <li>
+          <a href="#">Link 2</a>
+        </li>
+        <li>
+          <a href="#">Link 3</a>
+        </li>
+      </ul>
+    </div>
+  <!-- DROPDOWN MENU For Browse-->
+  <ul id="my-dropdown" class="dropdown-content">
+        <div class="row">
+            <div class="col s6 m6">
+        <li>
+          <a href="#">Link 1</a>
+        </li>
+        <li>
+          <a href="#">Link 2</a>
+        </li>
+        <li>
+          <a href="#">Link 3</a>
+        </li>
+        <li>
+          <a href="#">Link asdasdasdas3</a>
+        </li>
+            </div>
+            <div class="col s6 m6">
+        <li>
+          <a href="#">Link 1</a>
+        </li>
+        <li>
+          <a href="#">Link 2</a>
+        </li>
+        <li>
+          <a href="#">Link 3</a>
+        </li>
+        <li>
+          <a href="#">Link asdasdasdas3</a>
+        </li>
+            </div>
+        </div>
+    </ul>
+    
+    <div class="col s6 m6" >
+        <ul id="my-dropdown" class="dropdown-content">
+        <li>
+          <a href="#">Link 1</a>
+        </li>
+        <li>
+          <a href="#">Link 2</a>
+        </li>
+        <li>
+          <a href="#">Link 3</a>
+        </li>
+      </ul>
+    </div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nostrum fugit illum fugiat. Provident totam eum magnam commodi voluptates minus culpa ipsum quia sint alias, itaque, non hic maxime est.
+
+
+    
+    <i class="material-icons">search</i>
+    <div class="input-field inline">
+       
+      <input id="users" type="text"  placeholder="Search">
+     
+    </div>
+    
+
+  
+  <!-- MOVES CONTENT UP -->
+  <div style="margin-top: 1000px;"></div>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+ <script type="text/javascript" src="assets/js/script.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.dropdown-button').dropdown({
+        constrainWidth: false,
+        hover: true,
+        belowOrigin: true,
+        alignment: 'left'
+      });
+     
+
+      // JAVASCRIPT START HERE //
+
+      $('.button-collapse').sideNav();
+      $('.sidenav').sideNav();
+
+
+    });
+  </script>
+
+</body>
+</html>

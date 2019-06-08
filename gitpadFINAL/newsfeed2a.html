@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
+        <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+      
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- <style>
+        .row > div {
+            padding: 5px;
+            background: #ddd;
+            border: 2px solid #fff;
+            line-height: 60px;
+        }
+        .row {
+            margin: 10px auto;
+            
+        }
+       
+        </style> -->
+
+        <title>News Feed</title>
+      </head>
+<body>
+
+    <!-- RESPONSIVE WITH SIDE MENU -->
+    
+    <div class="navbar-fixed">
+      <nav class="blue darken-4 #ff8f00 amber darken-3">
+            <a href="#" class="brand-logo"> <img src="img/git.png" class="Responsive-img circle" style="width: 50px; height: 50px;"> GitPad</a>
+           
+        <div class="container">
+          <div class="nav-wrapper">
+            <a class="button-collapse" data-activates="mobile-nav" href="#">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                
+                <!-- DROPDOWN TRIGGER -->
+              <li>
+                    <a class="dropdown-button" data-activates="my-dropdown" href="#!">Browse
+                      <i class="material-icons right">arrow_drop_down</i>
+                    </a>
+                  </li>
+              <li>
+                  
+                <a href="#">Writer opportunities</a>
+              </li>
+              <li>
+                    <a class="dropdown-button" data-activates="my-dropdown" href="#!">Community
+                            <i class="material-icons right">arrow_drop_down</i>
+                    </a>
+              </li>
+             
+              <li>
+                    <i class="material-icons">search</i>
+                    <li>
+                    <div class="input-field inline" >
+                       
+                      <input id="users" type="text"  placeholder="Search">
+                     
+                    </div>
+                </li>
+              </li>
+              
+              <li>
+                 
+                   
+                <a class="dropdown-buttonA" data-activates="my-dropdownA" href="#!">
+                    <img src="img/1.png" alt="" class="Responsive-img circle" style="height: 40px; width: 40px">
+                    Edwil<i class="material-icons right">arrow_drop_down</i>
+                </a>
+          </li>
+          
+            </ul>
+            
+            <ul id="mobile-nav" class="side-nav orange">
+                    <li><div class="user-view">
+                      <div class="background"><img src="images/office.jpg"></div>
+                      <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                      <a href="#name"><span class="white-text name">John Doe</span></a>
+                      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                    </div></li>
+                    <li><a href="#!"><i class="material-icons">dashboard</i>Dashboard</a></li>
+                    <li><a href="#!">What's New?</a></li>
+                    <li><div class="divider"></div></li>
+                    <li>
+                      <form>
+                        <div class="input-field">
+                          <input type="search" id="search" required>
+                          <label for="search" class="label-icon">
+                            <i class="material-icons">search</i>
+                          </label>
+                          <i class="material-icons">close</i>
+                        </div>
+                      </form>
+                    </li>
+                    <li class="no-padding">
+                      <ul class="collapsible collapsible-accordion">
+                        <li><a class="collapsible-header">Browse<i class="material-icons">arrow_drop_down</i></a>
+                          <div class="collapsible-body">
+                            <ul>
+                              <li><a href="#!">Action</a></li>
+                              <li><a href="#!">Adventure</a></li>
+                              <li><a href="#!">Anime</a></li>
+                              <li><a href="#!">Horror</a></li>
+                              <li><a href="#!">Mystery</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><div class="divider"></div></li>
+                    <li class="no-padding">
+                      <ul class="collapsible collapsible-accordion">
+                        <li><a class="collapsible-header">Account Info<i class="material-icons">arrow_drop_down</i></a>
+                          <div class="collapsible-body">
+                            <ul>
+                              <li><a href="#!">Edit My Profile</a></li>
+                              <li><a href="#!">Account Settings</a></li>
+                              <li><a href="#!">Privacy Settings</a></li>
+                              <li><a href="#!">Logout</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+          
+                  <ul id="mobile-nav" class="side-nav">
+                        <li><div class="user-view">
+                          <div class="background"><img src="images/office.jpg"></div>
+                          <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                          <a href="#name"><span class="white-text name">John Doe</span></a>
+                          <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                        </div></li>
+                        <li><a href="#!"><i class="material-icons">dashboard</i>Dashboard</a></li>
+                        <li><a href="#!">What's New?</a></li>
+                        <li><div class="divider"></div></li>
+                        <li>
+                          <form>
+                            <div class="input-field">
+                              <input type="search" id="search" required>
+                              <label for="search" class="label-icon">
+                                <i class="material-icons">search</i>
+                              </label>
+                              <i class="material-icons">close</i>
+                            </div>
+                          </form>
+                        </li>
+                        <li class="no-padding">
+                          <ul class="collapsible collapsible-accordion">
+                            <li><a class="collapsible-header">Browse<i class="material-icons">arrow_drop_down</i></a>
+                              <div class="collapsible-body">
+                                <ul>
+                                  <li><a href="#!">Action</a></li>
+                                  <li><a href="#!">Adventure</a></li>
+                                  <li><a href="#!">Anime</a></li>
+                                  <li><a href="#!">Horror</a></li>
+                                  <li><a href="#!">Mystery</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><div class="divider"></div></li>
+                        <li class="no-padding">
+                          <ul class="collapsible collapsible-accordion">
+                            <li><a class="collapsible-header">Account Info<i class="material-icons">arrow_drop_down</i></a>
+                              <div class="collapsible-body">
+                                <ul>
+                                  <li><a href="#!">Edit My Profile</a></li>
+                                  <li><a href="#!">Account Settings</a></li>
+                                  <li><a href="#!">Privacy Settings</a></li>
+                                  <li><a href="#!">Logout</a></li>
+                                </ul>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+      <!-- DROPDOWN MENU For Browse-->
+      <ul id="my-dropdown" class="dropdown-content">
+            <div class="row">
+                <div class="col s6 m6">
+            <li>
+              <a href="#">Link 1</a>
+            </li>
+            <li>
+              <a href="#">Link 2</a>
+            </li>
+            <li>
+              <a href="#">Link 3</a>
+            </li>
+            <li>
+              <a href="#">Link asdasdasdas3</a>
+            </li>
+                </div>
+                <div class="col s6 m6">
+            <li>
+              <a href="#">Link 1</a>
+            </li>
+            <li>
+              <a href="#">Link 2</a>
+            </li>
+            <li>
+              <a href="#">Link 3</a>
+            </li>
+            <li>
+              <a href="#">Link asdasdasdas3</a>
+            </li>
+                </div>
+            </div>
+        </ul>
+        
+        <div class="col s6 m6" >
+            <ul id="my-dropdown" class="dropdown-content">
+            <li>
+              <a href="#">Link 1</a>
+            </li>
+            <li>
+              <a href="#">Link 2</a>
+            </li>
+            <li>
+              <a href="#">Link 3</a>
+            </li>
+          </ul>
+        </div>
+      <!-- DROPDOWN MENU For Browse-->
+      <ul id="my-dropdown" class="dropdown-content">
+            <div class="row">
+                <div class="col s6 m6">
+            <li>
+              <a href="#">Link 1</a>
+            </li>
+            <li>
+              <a href="#">Link 2</a>
+            </li>
+            <li>
+              <a href="#">Link 3</a>
+            </li>
+            <li>
+              <a href="#">Link asdasdasdas3</a>
+            </li>
+                </div>
+                <div class="col s6 m6">
+            <li>
+              <a href="#">Link 1</a>
+            </li>
+            <li>
+              <a href="#">Link 2</a>
+            </li>
+            <li>
+              <a href="#">Link 3</a>
+            </li>
+            <li>
+              <a href="#">Link asdasdasdas3</a>
+            </li>
+                </div>
+            </div>
+        </ul>
+        
+        
+      <!-- DROPDOWN MENU For Browse-->
+      <ul id="my-dropdownA" class="dropdown-content">
+        <li>
+          <a href="../../nix/profile.html">My Profile</a>
+        </li>
+        <li>
+          <a href="newsfeed.html">News Feed</a>
+        </li>
+        <li>
+          <a href="notif.html">Notifications &nbsp; &nbsp;  &nbsp;</a>
+        </li>
+        <li>
+          <a href="#">Message</a>
+        </li>
+        <li>
+          <a href="../supermatt/library.html">Library</a>
+        </li>
+        <li>
+          <a href="#">Setting</a>
+        </li>
+        <li>
+          <a href="../index.html">Log-out</a>
+        </li>
+       
+          
+    </ul>
+        
+   <!-- 
+    <div class="container">
+    <div class="row">
+        <div class="stories">
+        <div class="col s8" style="line-height: 220px;">s</div>
+        <div class="col s4" style="line-height: 120px; width: 329px;" >s</div>
+    </div>
+    <div class="row">
+        <div class="col s4" style="line-height: 300px;">s</div>
+        <div class="col s4" style="line-height: 200px; width: 200px;" >s</div>
+        <div class="col s4" style="line-height: 300px; width: 250px;">s</div>
+        <div class="col s12" style="line-height: 200px; width: 100px;">s</div>
+        <div class="col s4" style="line-height: 250px; width: 20px;">s</div>
+      </div>
+    </div>
+    </div>
+    -->
+    <!-- <div class="container">
+      <div class="row">
+        
+        <table>
+          <th>
+
+          </th>
+        </table>
+
+
+
+
+
+          <div class="col s12 m8" style="line-height: 400px;">s</div>
+
+          
+
+          <div class="col s12 m4" style="line-height: 220px;" >s</div>
+          <div class="row">
+          <div class="col s12 m4" style="line-height: 180px;">s</div>
+          <div class="col s12 m8" style="line-height: 800px;" >s</div>
+          <div class="col s12 m4" style="line-height: 400px;" >s</div>
+        </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="row" style="background: #ddd;">
+        <div class="col s12 m12"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime velit dolorum quia. Rerum in ducimus debitis et? Quis, quo corporis in voluptatum cum inventore commodi provident, sequi, atque a similique.
+  <div class="row" style="  padding-left: 30px;">
+      <div class="col s12 m2" style=" padding: 10px;
+     
+      background: #ddd;
+      border: 2px solid #fff;
+      line-height: 60px;"> -->
+        <!-- SMALL -->
+        <!-- <div class="card small">
+          <div class="card-image">
+            <img src="img/1.jpeg">
+            <span class="card-title">Card Image</span>
+           
+          </div>
+          &nbsp; asdgsadgsahjdgsajdasd
+          
+          </div>
+          
+        </div>
+      <div class="col s12 m2" style=" padding: 10px;
+    
+     background: #ddd;
+    
+     line-height: 60px;"> -->
+        <!-- SMALL -->
+        <!-- <div class="card small">
+          <div class="card-image">
+            <img src="img/1.jpeg">
+            <span class="card-title">Card Image</span>
+           
+          </div>
+          &nbsp; asdgsadgsahjdgsajd
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+      <!-- <div class="row">
+          <div class="col s12 m6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tenetur eum ut corporis. Ad ut, aliquam eius maxime amet ipsam delectus omnis nihil exercitationem veritatis, ab labore temporibus rerum tenetur!
+            </div>
+          </div>
+    
+
+          <div class="container">
+              <tr>
+                  <th><h5>Stories You Might Enjoy</h5></th>
+                 
+              </tr>
+          </div>
+          <div class="container">
+            <div class="row">
+                <div class="col s12 m8">
+                   
+          <table>
+            
+              <thead>
+                 
+                <tr>
+                    <th>Name</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+              </thead>
+      
+              <tbody>
+                <tr>
+                  <td>Alvin</td>
+                  <td>Eclair</td>
+                  <td>$0.87</td>
+                </tr>
+                <tr>
+                  <td>Alan</td>
+                  <td>Jellybean</td>
+                  <td>$3.76</td>
+                </tr>
+                <tr>
+                  <td>Jonathan</td>
+                  <td>Lollipop</td>
+                  <td>$7.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+                <div class="col s12 m4">
+          <table>
+              <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+              </thead>
+      
+              <tbody>
+                <tr>
+                  <td>Alvin</td>
+                  <td>Eclair</td>
+                  <td>$0.87</td>
+                </tr>
+                <tr>
+                  <td>Alan</td>
+                  <td>Jellybean</td>
+                  <td>$3.76</td>
+                </tr>
+                <tr>
+                  <td>Jonathan</td>
+                  <td>Lollipop</td>
+                  <td>$7.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+          </div>
+    
+          <div class="container">
+            <div class="row">
+                <div class="col s12 m8">
+          <table>
+              <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+              </thead>
+      
+              <tbody>
+                <tr>
+                  <td>Alvin</td>
+                  <td>Eclair</td>
+                  <td>$0.87</td>
+                </tr>
+                <tr>
+                  <td>Alan</td>
+                  <td>Jellybean</td>
+                  <td>$3.76</td>
+                </tr>
+                <tr>
+                  <td>Jonathan</td>
+                  <td>Lollipop</td>
+                  <td>$7.00</td>
+                </tr>
+                <tr>
+                  <td>Alvin</td>
+                  <td>Eclair</td>
+                  <td>$0.87</td>
+                </tr>
+                <tr>
+                  <td>Alan</td>
+                  <td>Jellybean</td>
+                  <td>$3.76</td>
+                </tr>
+                <tr>
+                  <td>Jonathan</td>
+                  <td>Lollipop</td>
+                  <td>$7.00</td>
+                </tr>
+                <tr>
+                  <td>Alvin</td>
+                  <td>Eclair</td>
+                  <td>$0.87</td>
+                </tr>
+                <tr>
+                  <td>Alan</td>
+                  <td>Jellybean</td>
+                  <td>$3.76</td>
+                </tr>
+                <tr>
+                  <td>Jonathan</td>
+                  <td>Lollipop</td>
+                  <td>$7.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+                <div class="col s12 m4">
+          <table>
+              <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+              </thead>
+      
+              <tbody>
+                <tr>
+                  <td>Alvin</td>
+                  <td>Eclair</td>
+                  <td>$0.87</td>
+                </tr>
+                <tr>
+                  <td>Alan</td>
+                  <td>Jellybean</td>
+                  <td>$3.76</td>
+                </tr>
+                <tr>
+                  <td>Jonathan</td>
+                  <td>Lollipop</td>
+                  <td>$7.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+          </div>
+          <div >
+          <div class="row" style="background: lightblue; padding-left: 10px;">
+              <div class="col s12 m3">
+                  <div class="card-panel  z-depth-2">
+                  <div class="card">
+                      <div class="card-image">
+                        <img src="img/code.jpg">
+                      </div>
+                    </div>
+                
+                  <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam magni aut mollitia quis? Ab voluptate quaerat libero
+                    voluptatibus quisquam in dolorum nobis hic. Suscipit dignissimos laboriosam id nesciunt debitis exercitationem.
+                  </span>
+                </div>
+              </div>
+              <div class="col s12 m3">
+                  <div class="card-panel  z-depth-2">
+                  <div class="card">
+                      <div class="card-image">
+                        <img src="img/code.jpg">
+                      </div>
+                    </div>
+                
+                  <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam magni aut mollitia quis? Ab voluptate quaerat libero
+                    voluptatibus quisquam in dolorum nobis hic. Suscipit dignissimos laboriosam id nesciunt debitis exercitationem.
+                  </span>
+                </div>
+              </div>
+          </div>
+        </div> -->
+
+<!-- section:profile -->
+<section id="section-profiles" class="section section profiles">
+    <!-- <div class="container"> -->
+        <div class="row">
+            <div class="card-image col s12 m2 offset center">
+                    
+            </div>
+            <div class="col s12 m6 center">
+               
+                    <div class="card">
+                        <div style="padding-top: 5px">
+                       <h5> <b>Stories you might enjoy</b> </h5>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 m4 l2">
+                        <p style="padding-left: 17px; padding-bottom: 10px;" ><img class="materialboxed"  width="110" height="180" src="img/m.gif">
+                         <B class="blue-text darken-4">SHE IS A HE</B> 1,000 reads
+                            </div>
+                            <div class="col s12 m4 l2">
+                        <p style="padding-left: 17px; padding-bottom: 10px;" ><img class="materialboxed"  width="110" height="180" src="img/l.gif">
+                         <B class="blue-text darken-4">BREAK UP</B> 2,000 reads
+                            </div>
+                            <div class="col s12 m4 l2">
+                        <p style="padding-left: 17px; padding-bottom: 10px;" ><img class="materialboxed"  width="110" height="180" src="img/j.gif">
+                        <B class="blue-text darken-4">SNOW</B> 3,000 reads
+                            </div>
+                            <div class="col s12 m4 l2">
+                        <p style="padding-left: 17px; padding-bottom: 10px;" ><img class="materialboxed"  width="110" height="180" src="img/o.gif">
+                         <B class="blue-text darken-4">LOVE WAR</B> 4,000 reads
+                            </div>
+                            <div class="col s12 m4 l2">
+                        <p style="padding-left: 17px; padding-bottom: 10px;" ><img class="materialboxed"  width="110" height="180" src="img/gif.gif">
+                         <B class="blue-text darken-4">CRUSH</B> 5,000 reads
+                            </div>
+                            <div class="col s12 m4 l2">
+                        <p style="padding-left: 17px; padding-bottom: 10px; padding-top:60px;" ><img  width="50" height="50px" src="img/next.png">
+                       
+                           </div>
+                            <!-- <div class="col s12 m4 l2">
+                        <p style="padding-left: 30px; padding-bottom: 10px; padding-top:60px;" ><i class="material-icons"></i>
+                       
+                           </div> -->
+                          </div> 
+                        
+                    </div>
+                    <div class="card" style="padding: 10px;">
+                        <div class="row" style="padding-right: 20px; padding-top: 10px;">
+                      
+                            <a href="newsfeed.html" class="btn btn-effects btn-waves orange darken-3 white-text "> <i class="material-icons  ">subtitles</i> News Feed</a>
+                            <a href="notif.html" class="btn btn-effects btn-waves white blue-text ">  <i class="material-icons  ">notifications</i>  Notifications</a>
+                            <a href="posts.html" class="btn btn-effects btn-waves white blue-text ">  <i class="material-icons  ">border_color</i>  Add Posts</a>
+                           
+                          </div>
+                        
+                        <div class="row">
+                          
+                        <p>“Somebody who only reads newspapers and at best books of contemporary authors looks to me like an extremely near-sighted person who scorns eyeglasses. He is completely dependent on the prejudices and fashions of his times, since he never gets to see or hear anything else.” – Albert Einstein
+                        </p>
+
+                        <div class="col s12 m12">
+                            <!-- HORIZONTAL CARD -->
+                            <div class="card horizontal">
+                              
+                                <img src="img/git.png" style="height: 50px; width: 50px;">
+                                <br> &nbsp; <p>GitPad Recommends |</p> &nbsp;  <p class="blue-text lighten-4"> My Famous Husband 💑 </p>
+                              
+                            </div>
+                          </div>
+                        <!-- card -->
+                       
+                        <div class="col s12 m12" style="padding: 0px 30px 0px 70px;">
+                            <!-- HORIZONTAL CARD -->
+                            <div class="card horizontal">
+                              <div class="card-image">
+                                <img src="img/d.png" style="height: 100px; width: 300px;">
+                              </div> <p> “Despite the enormous quantity of books, how few people read! And if one reads profitably, one would realize how much stupid stuff the vulgar herd is content to swallow every day.” – Voltaire <a class="orange-text lighten-4"> Read more... </p></a> 
+                              
+                            </div>
+                          </div>
+                       
+                          <!--  -->
+
+                      </div>
+                        <div class="row">
+                        <div class="col s12 m12">
+                            <!-- HORIZONTAL CARD -->
+                            <div class="card horizontal">
+                              
+                                <img src="img/git.png" style="height: 50px; width: 50px;">
+                                <br> &nbsp; <p>GitPad Recommends |</p> &nbsp;  <p class="blue-text lighten-4"> Geek Diaries 😲 </p> 
+                              
+                            </div>
+                          </div>
+                        <!-- card -->
+                       
+                        <div class="col s12 m12" style="padding: 0px 30px 0px 70px;">
+                            <!-- HORIZONTAL CARD -->
+                            <div class="card horizontal">
+                              <div class="card-image">
+                                <img src="img/a.jpg" style="height: 100px; width: 300px;">
+                              </div>  <p> “Despite the enormous quantity of books, how few people read! And if one reads profitably, one would realize how much stupid stuff the vulgar herd is content to swallow every day.” – Voltaire <a class="orange-text lighten-4"> Read more... </p></a>
+                              
+                            </div>
+                          </div>
+                       
+                          <!--  -->
+                      </div>
+                      <!--  -->
+                        <div class="row">
+                        <div class="col s12 m12">
+                            <!-- HORIZONTAL CARD -->
+                            <div class="card horizontal">
+                              
+                                <img src="img/git.png" style="height: 50px; width: 50px;">
+                                <br> &nbsp; <p>GitPad Recommends |</p> &nbsp;  <p class="blue-text lighten-4"> Secret Behind the neardy Glasses 😳 </p> 
+                              
+                            </div>
+                          </div>
+                        <!-- card -->
+                       
+                        <div class="col s12 m12" style="padding: 0px 30px 0px 70px;">
+                            <!-- HORIZONTAL CARD -->
+                            <div class="card horizontal">
+                              <div class="card-image">
+                                <img src="img/o.jpg" style="height: 100px; width: 300px;">
+                              </div>  <p> “Despite the enormous quantity of books, how few people read! And if one reads profitably, one would realize how much stupid stuff the vulgar herd is content to swallow every day.” – Voltaire <a class="orange-text lighten-4"> Read more... </p></a>
+                              
+                            </div>
+                          </div>
+                       
+                          <!--  -->
+                      </div>
+                        <div class="row">
+                        <div class="col s12 m12">
+                            <!-- HORIZONTAL CARD -->
+                            <div class="card horizontal">
+                              
+                                <img src="img/git.png" style="height: 50px; width: 50px;">
+                                <br> &nbsp; <p>GitPad Recommends |</p> &nbsp;  <p class="blue-text lighten-4"> Ms. Chubby 😥</p> 
+                              
+                            </div>
+                          </div>
+                        <!-- card -->
+                       
+                        <div class="col s12 m12" style="padding: 0px 30px 0px 70px;">
+                            <!-- HORIZONTAL CARD -->
+                            <div class="card horizontal">
+                              <div class="card-image">
+                                <img src="img/e.png" style="height: 100px; width: 300px;">
+                              </div>  <p> “Despite the enormous quantity of books, how few people read! And if one reads profitably, one would realize how much stupid stuff the vulgar herd is content to swallow every day.” – Voltaire <a class="orange-text lighten-4"> Read more... </p></a>
+                              
+                            </div>
+                          </div>
+                       
+                          <!--  -->
+                      </div>
+                        <div class="row">
+                        <div class="col s12 m12">
+                            <!-- HORIZONTAL CARD -->
+                            <div class="card horizontal">
+                              
+                                <img src="img/git.png" style="height: 50px; width: 50px;">
+                                <br> &nbsp; <p>GitPad Recommends |</p> &nbsp;  <p class="blue-text lighten-4"> Apart 😍 </p> 
+                              
+                            </div>
+                          </div>
+                        <!-- card -->
+                       
+                        <div class="col s12 m12" style="padding: 0px 30px 0px 70px;">
+                            <!-- HORIZONTAL CARD -->
+                            <div class="card horizontal">
+                              <div class="card-image">
+                                <img src="img/b.jpg" style="height: 100px; width: 300px;">
+                              </div>  <p> “Despite the enormous quantity of books, how few people read! And if one reads profitably, one would realize how much stupid stuff the vulgar herd is content to swallow every day.” – Voltaire <a class="orange-text lighten-4"> Read more... </p></a>
+                              
+                            </div>
+                          </div>
+                       
+                          <!--  -->
+                      </div>
+                        <div class="row">
+                        <div class="col s12 m12">
+                            <!-- HORIZONTAL CARD -->
+                            <div class="card horizontal">
+                              
+                                <img src="img/git.png" style="height: 50px; width: 50px;">
+                                <br> &nbsp; <p>GitPad Recommends |</p> &nbsp;  <p class="blue-text lighten-4"> Picture Me and You 💑 </p> 
+                              
+                            </div>
+                          </div>
+                        <!-- card -->
+                       
+                        <div class="col s12 m12" style="padding: 0px 30px 0px 70px;">
+                            <!-- HORIZONTAL CARD -->
+                            <div class="card horizontal">
+                              <div class="card-image">
+                                <img src="img/c.png" style="height: 100px; width: 300px;">
+                              </div>  <p> “Despite the enormous quantity of books, how few people read! And if one reads profitably, one would realize how much stupid stuff the vulgar herd is content to swallow every day.” – Voltaire <a class="orange-text lighten-4"> Read more... </p></a>
+                              
+                            </div>
+                          </div>
+                       
+                          <!--  -->
+                      </div>
+                        <div class="row">
+                        
+                       
+                        <div class="col s12 m12" style="padding: 0px 30px 0px 70px;">
+                            <!-- HORIZONTAL CARD -->
+                             <!-- COLLAPSIBLE -->
+              <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                  <div class="collapsible-header">
+                    <img src="img/git.png" style="height: 50px; width: 50px;"> <p>GitPad Recommends |</p> &nbsp;  <p class="blue-text lighten-4"> Show More.. </p>
+                  </div>
+                  <div class="collapsible-body">
+                    <div class="card horizontal">
+                      <div class="card-image">
+                        <img src="img/c.png" style="height: 100px; width: 300px;">
+                      </div>  <p> “Despite the enormous quantity of books, how few people read! And if one reads profitably, one would realize how much stupid stuff the vulgar herd is content to swallow every day.” – Voltaire <a class="orange-text lighten-4"> Read more... </p></a>
+                      
+                    </div>
+                   </div>
+              </li>
+                <li>
+                  <div class="collapsible-header">
+                    <img src="img/git.png" style="height: 50px; width: 50px;"> <p>GitPad Recommends |</p> &nbsp;  <p class="blue-text lighten-4"> Show More.. </p>
+                  </div>
+                  <div class="collapsible-body">
+                    <div class="card horizontal">
+                      <div class="card-image">
+                        <img src="img/c.png" style="height: 100px; width: 300px;">
+                      </div>  <p> “Despite the enormous quantity of books, how few people read! And if one reads profitably, one would realize how much stupid stuff the vulgar herd is content to swallow every day.” – Voltaire <a class="orange-text lighten-4"> Read more... </p></a>
+                      
+                    </div>
+                   </div>
+              </li>
+        </ul>
+                          </div>
+                          <!--  -->
+                      </div>
+                    </div>
+                </div>
+
+                <!--  -->
+
+            <div class="col s12 m3">
+                <div class="card">
+                    <div class="" style="padding: 10px;">
+                    
+                  </div>
+                    <div class="row">
+                        <div class="col s12 m4">
+                            <img src="img/aaa.jpg" id="img"  style="height: 200px; width: 320px;">
+                        </div>
+                       
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col s12 m3">
+                <div class="card">
+                  <div class="" style="padding: 10px;">
+                  <b>RECOMMENDED PEOPLE</b> 
+                </div>  
+                    <div class="row">
+                    <div class="row">
+                        <div class="col s12 m3">
+                            <img src="img/p1.png" id="img"  style="height: 50px">
+                        </div><p>James Pias <br> <a href="newsfeedFol2.html" class="btn btn-effects btn-waves grey lighten-3 black-text" style="height: 30px;">Follow</a> </p>
+                        <div class="col s12 m3">
+                            <img src="img/p2.png" id="img"  style="height: 50px">
+                        </div><p>Daniel Ong <br> <a href="newsfeed.html" class="btn btn-effects btn-waves orange white-text" style="height: 30px;">Following</a></p>
+                        <div class="col s12 m3">
+                            <img src="img/p3.png" id="img"  style="height: 50px">
+                        </div><p>John Map <br> <a href="#" class="btn btn-effects btn-waves grey lighten-3 black-text" style="height: 30px;">Follow</a></p>
+                        <div class="col s12 m3">
+                            <img src="img/p4.png" id="img"  style="height: 50px">
+                        </div><p>Elizabath Max <br> <a href="#" class="btn btn-effects btn-waves grey lighten-3 black-text" style="height: 30px;">Follow</a></p>
+                        <div class="col s12 m3">
+                            <img src="img/p6.png" id="img"  style="height: 50px">
+                        </div><p>William Pot <br> <a href="#" class="btn btn-effects btn-waves grey lighten-3 black-text" style="height: 30px;">Follow</a></p>
+                        <div class="col s12 m3">
+                            <img src="img/p7.png" id="img"  style="height: 50px">
+                        </div><p>Jenny Smith <br> <a href="#" class="btn btn-effects btn-waves grey lighten-3 black-text" style="height: 30px;">Follow</a></p>
+                        <div class="col s12">
+                          <a href="../invite/invite.html" class="btn btn-effects btn-waves orange darken-3">
+                            <i class="material-icons">person_add</i>
+                            Invite Friends</a>
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+</section>
+
+
+
+  <!-- MOVES CONTENT UP -->
+  <!-- <div style="margin-top: 1000px;"></div> -->
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+ <script type="text/javascript" src="assets/js/script.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.dropdown-button').dropdown({
+        constrainWidth: false,
+        hover: true,
+        belowOrigin: true,
+        alignment: 'left'
+      });
+      $('.dropdown-buttonA').dropdown({
+        constrainWidth: false,
+        hover: true,
+        belowOrigin: true,
+        alignment: 'left'
+      });
+     
+
+      // JAVASCRIPT START HERE //
+
+      $('.button-collapse').sideNav();
+      $('.sidenav').sideNav();
+
+
+    });
+  </script>
+
+</body>
+</html>

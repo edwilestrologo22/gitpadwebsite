@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitPad</title>
+</head>
+
+<body>
+
+  <!-- RESPONSIVE WITH SIDE MENU -->
+    
+    <div class="navbar-fixed">
+  <nav class="blue darken-4 #ff8f00 amber darken-3">
+        <a href="#" class="brand-logo">GitPad</a>
+    <div class="container">
+      <div class="nav-wrapper">
+        <a class="button-collapse" data-activates="mobile-nav" href="#">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+            
+            <!-- DROPDOWN TRIGGER -->
+          <li>
+                <a class="dropdown-button" data-activates="my-dropdown" href="#!">Browse
+                  <i class="material-icons right">arrow_drop_down</i>
+                </a>
+              </li>
+          
+          <li>
+                <i class="material-icons">search</i>
+                <li>
+                <div class="input-field inline" >
+                   
+                  <input id="users" type="text"  placeholder="Search">
+                 
+                </div>
+            </li>
+          </li>
+          <!-- ICON LINK -->
+          <li class="right"><a class="dropdown-button" data-activates="my-dropdown2" href="#!">&nbsp;
+              <img src="img/person3.jpg" alt="" class="Responsive-img circle" style="height: 40px; width: 40px">
+          turk@gmail.com<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+        
+        <ul id="mobile-nav" class="side-nav">
+                <li><div class="user-view">
+                  <div class="background"><img src="images/office.jpg"></div>
+                  <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                  <a href="#name"><span class="white-text name">John Doe</span></a>
+                  <a href="#email"><span class="white-text email">turk@gmail.com</span></a>
+                </div></li>
+                <li><a href="#!"><i class="material-icons">dashboard</i>Dashboard</a></li>
+                <li><a href="#!">What's New?</a></li>
+                <li><div class="divider"></div></li>
+                <li>
+                  <form>
+                    <div class="input-field">
+                      <input type="search" id="search" required>
+                      <label for="search" class="label-icon">
+                        <i class="material-icons">search</i>
+                      </label>
+                      <i class="material-icons">close</i>
+                    </div>
+                  </form>
+                </li>
+                <li class="no-padding">
+                  <ul class="collapsible collapsible-accordion">
+                    <li><a class="collapsible-header">Browse<i class="material-icons">arrow_drop_down</i></a>
+                      <div class="collapsible-body">
+                        <ul>
+                          <li><a href="#!">Action</a></li>
+                          <li><a href="#!">Adventure</a></li>
+                          <li><a href="#!">Anime</a></li>
+                          <li><a href="#!">Horror</a></li>
+                          <li><a href="#!">Mystery</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li><div class="divider"></div></li>
+                <li class="no-padding">
+                  <ul class="collapsible collapsible-accordion">
+                    <li><a class="collapsible-header">Account Info<i class="material-icons">arrow_drop_down</i></a>
+                      <div class="collapsible-body">
+                        <ul>
+                          <li><a href="#!">Edit My Profile</a></li>
+                          <li><a href="#!">Buy Books</a></li>
+                          <li><a href="#!">Account Settings</a></li>
+                          <li><a href="#!">Privacy Settings</a></li>
+                          <li><a href="#!">Logout</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+      
+              <ul id="mobile-nav" class="side-nav">
+                    <li><div class="user-view">
+                      <div class="background"><img src="images/office.jpg"></div>
+                      <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                      <a href="#name"><span class="white-text name">John Doe</span></a>
+                      <a href="#email"><span class="white-text email">turk@gmail.com</span></a>
+                    </div></li>
+                    <li><a href="#!"><i class="material-icons">dashboard</i>Dashboard</a></li>
+                    <li><a href="#!">What's New?</a></li>
+                    <li><div class="divider"></div></li>
+                    <li>
+                      <form>
+                        <div class="input-field">
+                          <input type="search" id="search" required>
+                          <label for="search" class="label-icon">
+                            <i class="material-icons">search</i>
+                          </label>
+                          <i class="material-icons">close</i>
+                        </div>
+                      </form>
+                    </li>
+                    <li class="no-padding">
+                      <ul class="collapsible collapsible-accordion">
+                        <li><a class="collapsible-header">Browse<i class="material-icons">arrow_drop_down</i></a>
+                          <div class="collapsible-body">
+                            <ul>
+                              <li><a href="#!">Action</a></li>
+                              <li><a href="#!">Adventure</a></li>
+                              <li><a href="#!">Anime</a></li>
+                              <li><a href="#!">Horror</a></li>
+                              <li><a href="#!">Mystery</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><div class="divider"></div></li>
+                    <li class="no-padding">
+                      <ul class="collapsible collapsible-accordion">
+                        <li><a class="collapsible-header">Account Info<i class="material-icons">arrow_drop_down</i></a>
+                          <div class="collapsible-body">
+                            <ul>
+                              <li><a href="#!">Buy Books</a></li>
+                              <li><a href="#!">Account Settings</a></li>
+                              <li><a href="#!">Privacy Settings</a></li>
+                              <li><a href="#!">Logout</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+  <!-- DROPDOWN MENU For Browse-->
+  <ul id="my-dropdown" class="dropdown-content">
+        <div class="row">
+            <div class="col s6 m6">
+        <li>
+          <a href="#">Link 1</a>
+        </li>
+        <li>
+          <a href="#">Link 2</a>
+        </li>
+        <li>
+          <a href="#">Link 3</a>
+        </li>
+        <li>
+          <a href="#">Link asdasdasdas3</a>
+        </li>
+            </div>
+            <div class="col s6 m6">
+        <li>
+          <a href="#">Link 1</a>
+        </li>
+        <li>
+          <a href="#">Link 2</a>
+        </li>
+        <li>
+          <a href="#">Link 3</a>
+        </li>
+        <li>
+          <a href="#">Link asdasdasdas3</a>
+        </li>
+            </div>
+        </div>
+    </ul>
+    
+    <div class="col s6 m6" >
+        <ul id="my-dropdown" class="dropdown-content">
+        <li>
+          <a href="#">Link 1</a>
+        </li>
+        <li>
+          <a href="#">Link 2</a>
+        </li>
+        <li>
+          <a href="#">Link 3</a>
+        </li>
+      </ul>
+    </div>
+ 
+    <!-- DropDown menu Profile -->
+    <ul id="my-dropdown2" class="dropdown-content">
+        <li><a href="#!">My Profile</a></li>
+        <li><a href="#!">Buy Books</a></li>
+        <li><a href="#!">Account Settings</a></li>
+        <li><a href="#!">Privacy Settings</a></li>
+        <li><a href="#!">Logout</a></li>
+      </ul>
+    
+   
+      <main>
+        <div class="container">
+                <h3>Suggested Book To Buy</h3>
+                <p>Become a supporter and help your favourite writers earn money.</p>
+          <!-- Hotels List -->
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <img src="lib/img/sofitel1.jpg" alt="..." class="col s12 m3">
+                <div class="col s12 m9">
+                  <ul class="collection col s12 m5">
+                    <li class="collection-item">Sofitel Bali Nusa Dua Beach Resort</li>
+                    <li class="collection-item">Nusa Dua, Indonesia</li>
+                    <li class="collection-item">
+                      <span>9.5</span><span><strong>Excellent !</strong> (8758 Reviews)</span>
+                    </li>
+                  </ul>
+                  <!-- Hotel Rooms & Prices -->
+                  <ul class="collection col s12 m3 center">
+                    <li class="collection-item" value="85000">
+                      <a href="#!" id="val1">Supreme<br>&#8369; 85,000</a>
+                    </li>
+                    <li class="collection-item" value="60000">
+                      <a href="#!" id="val2">Deluxe<br>&#8369; 60,000</a>
+                    </li>
+                    <li class="collection-item" value="40000">
+                      <a href="#!" id="val3">Prime<br>&#8369; 40,000</a>
+                    </li>
+                  </ul>
+                  <ul class="col s12 m4 collection center">
+                    <li class="collection-item" id="p1"></li>
+                    <li class="collection-item"><a class="waves-effect waves-red btn" id="show1">VIEW DETAILS</a></li>
+                    <li class="collection-item"><a class="waves-effect waves-yellow btn">BOOK NOW !</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Details Navigation -->
+            <div id="info1" class="hide">
+              <div class="card-tabs">
+                <ul class="tabs col s1 m1">
+                  <li class="tab"><a href="#nav1">INFO</a></li>
+                  <li class="tab"><a class="active" href="#nav2">PHOTOS</a></li>
+                  <li class="tab"><a href="#nav3">REVIEWS</a></li>
+                </ul>
+                <i class="material-icons close hide" id="close1">close</i>
+              </div>
+              <div class="card-content grey lighten-4" id="detail1">
+                  <div id="nav1">
+                      <!-- Section: Info-1 -->
+                      <section class="section section-info1 card-panel col s12 m12">
+                        <!-- Section: Info  Header -->
+                        <div class="card-title">Nearby top locations by: <!-- RADIO BUTTONS -->
+                        
+                            <input class="with-gap" type="radio" name="gender" id="time" checked>
+                            <label for="time">Time</label>
+                            <input class="with-gap" type="radio" name="gender" id="distance">
+                            <label for="distance">Distance</label>
+                         </div>
+                        
+    
+                        <div class="card-image center"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15771.76035154373!2d115.2299044!3d-8.7916994!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9c15915f406531c3!2sSofitel+Bali+Nusa+Dua+Beach+Resort!5e0!3m2!1sen!2sph!4v1559533528449!5m2!1sen!2sph" width="100%" height="240" frameborder="0" style="border:0" allowfullscreen></iframe>
+                      </div>
+                      </section>
+                      <!-- Section: Contact -->
+                      <section class="section section-info1 card-panel col s12 m12">
+                        <div class="card-title"><p class="flow-text">About Sofitel Bali Nusa Dua Beach Resort</p></div>
+                        <div class="card-content">
+                          <p class="">Sofitel Bali Nusa Dua Beach Resort is an Indian Ocean beachfront hotel near the Jalan Legian shops in Indonesia. <br><br> Each room comes complete with flat-screen TV and ensuites with hairdryers, free toiletries and deep soaking tubs. Free bottled water and in-room safes are also standard features along with tea and coffee making facilities. <br><br>
+                            Guests can cool off in the lagoon pool, unwind at the on-site spa or relax on the beach complete with umbrellas tables. A kids club, fitness centre, meeting space, ballroom and paid airport shuttle are available at the 24-hour front desk. On-site food and drink can be found at Cut Catch Cucina, Kwee Zeen and Nikki Beach Bali restaurants. <br><br>
+                             For spirits and cocktails there are the L'Oh Pool Bar and Le Bar. Nusa Dua Beach, Wally International Convention Centre and the Bali Nusa Dua Convention Center are all within walking distance of the upscale Sofitel Bali Nusa Dua Beach Resort. </p>
+                        </div>
+                      </section>
+        
+    
+                    
+                        <section class="section section-info1 card-panel col s12 m12">
+                            <div class="card-title"><p class="flow-text">Top Amenities</p></div>
+                            <div class="card-content">
+                              
+                              
+                              </div>
+                        </section>
+    
+                        
+    
+                      <section class="section section-info1 card-panel col s12 m3">
+                          <div class="card-title"><p class="flow-text ">All Amenities</p></div>
+                          <div class="card-content black-text darken-4"> Hotel facilities
+                            <br>
+    
+                            <ul class="collapsible popout">
+                                <li>
+                                  <div class="collapsible-header"><i class="material-icons">filter_drama</i>Hotel facilities</div>
+                                  <div class="collapsible-body"><span>
+                                    <ul class="unordered_list">
+                                        <li class="unordered_list_item">24-hour reception</li>
+                                        <li class="unordered_list_item">24-hour room service</li>
+                                        <li class="unordered_list_item">Beach umbrellas</li>
+                                    </ul>
+                                  </span></div>
+                                </li>
+                                
+                              </ul>
+                              
+                              <ul class="unordered_list col s12 m4">
+                                  <li class="unordered_list_item">24-hour reception</li>
+                                  <li class="unordered_list_item">24-hour room service</li>
+                                  <li class="unordered_list_item">Beach umbrellas</li>
+                                  <li class="unordered_list_item">Business center</li>
+                                  <li class="unordered_list_item">Concierge</li>
+                                  <li class="unordered_list_item">Conference rooms</li>
+                                  <li class="unordered_list_item">Deck chairs / Sun loungers</li>
+                                  <li class="unordered_list_item">Direct beach access</li>
+                                  <li class="unordered_list_item">Elevator</li>
+                                  <li class="unordered_list_item">Express check-in / out</li>
+                                  <li class="unordered_list_item">Free WiFi in lobby</li>
+                                  <li class="unordered_list_item">Gym</li>
+                                  <li class="unordered_list_item">Hotel bar</li>
+                                </ul>
+                                Room facilities
+                            <br>
+                              <ul class="unordered_list col s12 m4">
+                                  <li class="unordered_list_item">24-hour reception</li>
+                                  <li class="unordered_list_item">24-hour room service</li>
+                                  <li class="unordered_list_item">Beach umbrellas</li>
+                                  <li class="unordered_list_item">Business center</li>
+                                  <li class="unordered_list_item">Concierge</li>
+                                  <li class="unordered_list_item">Concierge</li>
+                                  <li class="unordered_list_item">Concierge</li>
+                                  <li class="unordered_list_item">Concierge</li>
+                                  <li class="unordered_list_item">Concierge</li>
+                                  <li class="unordered_list_item">Concierge</li>
+                                  <li class="unordered_list_item">Concierge</li>
+                                  <li class="unordered_list_item">Concierge</li>
+                                  <li class="unordered_list_item">Concierge</li>
+                                </ul>
+                             
+                                Wellness / Spa
+                            <br>
+                              <ul class="unordered_list col s12 m4">
+                                  <li class="unordered_list_item">24-hour reception</li>
+                                  <li class="unordered_list_item">24-hour room service</li>
+                                  <li class="unordered_list_item">Beach umbrellas</li>
+                                  <li class="unordered_list_item">Business center</li>
+                                  <li class="unordered_list_item">Concierge</li>
+                                  <li class="unordered_list_item">Concierge</li>
+                                  <li class="unordered_list_item">Concierge</li>
+                                  <li class="unordered_list_item">Concierge</li>
+                                  <li class="unordered_list_item">Concierge</li>
+                                  <li class="unordered_list_item">Concierge</li>
+                                  <li class="unordered_list_item">Concierge</li>
+                                  <li class="unordered_list_item">Concierge</li>
+                                  <li class="unordered_list_item">Concierge</li>
+                                </ul>
+    
+    
+                          </div>
+                      </section>
+        
+                      
+                  </div>
+                <div id="nav2">
+                  <!-- Section: Gallery -->
+                  <section id="gallery" class="col s12 m12 card-content section-gallery center">
+                    <h4 class=""><span class="teal-text">Photo </span> Gallery</h4>
+                    <div class="row card-panel teal">
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/sofitel1.jpg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/sofitel2.jpg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/sofitel3.jpg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/sofitel4.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="row card-panel amber">
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/resort1.jpg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/resort2.jpg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/resort3.jpg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/1.jpeg" alt="">
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div id="nav3">Test 3
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Hotels List -->
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <img src="lib/img/pegasus1.jpg" alt="..." class="col s12 m3">
+                <div class="col s12 m9">
+                  <ul class="collection col s12 m5">
+                    <li class="collection-item">Pegasus The Unicorn Hotel</li>
+                    <li class="collection-item">Nusa Dua, Indonesia</li>
+                    <li class="collection-item">
+                      <span>8.5</span>
+                      <span><strong>Very Good !</strong> (7394 Reviews)</span>
+                    </li>
+                  </ul>
+                  <!-- Hotel Rooms & Prices -->
+                  <ul class="collection col s12 m3 center">
+                    <li class="collection-item" value="85000">
+                      <a href="#!" id="val4">Supreme<br>&#8369; 85,000</a>
+                    </li>
+                    <li class="collection-item" value="60000">
+                      <a href="#!" id="val5">Deluxe<br>&#8369; 60,000</a>
+                    </li>
+                    <li class="collection-item" value="40000">
+                      <a href="#!" id="val6">Prime<br>&#8369; 40,000</a>
+                    </li>
+                  </ul>
+                  <ul class="col s12 m4 collection center">
+                    <li class="collection-item" id="p2"></li>
+                    <li class="collection-item"><a class="waves-effect waves-red btn" id="show2">VIEW DETAILS</a></li>
+                    <li class="collection-item"><a class="waves-effect waves-yellow btn">BOOK NOW !</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Details Navigation -->
+            <div id="info2" class="hide">
+              <div class="card-tabs">
+                <ul class="tabs col s1 m1">
+                  <li class="tab"><a href="#nav4">INFO</a></li>
+                  <li class="tab"><a class="active" href="#nav5">PHOTOS</a></li>
+                  <li class="tab"><a href="#nav6">REVIEWS</a></li>
+                </ul>
+                <i class="material-icons close hide" id="close2">close</i>
+              </div>
+              <div class="card-content grey lighten-4" id="detail2">
+                <div id="nav4">Test 1</div>
+                <div id="nav5">
+                  <!-- Section: Gallery -->
+                  <section id="gallery" class="col s12 m12 card-content section-gallery center">
+                    <h4 class="center"><span class="teal-text">Photo </span> Gallery</h4>
+                    <div class="row card-panel teal">
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/pegasus1.jpg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/pegasus2.jpg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/pegasus3.jpg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/2.jpeg" alt="">
+                      </div>
+                    </div>
+                    <div class="row card-panel amber">
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/3.jpeg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/4.jpeg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/5.jpeg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/6.jpeg" alt="">
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div id="nav6">Test 3</div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Hotels List -->
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <img src="lib/img/kamagong1.jpg" alt="..." class="col s12 m3">
+                <div class="col s12 m9">
+                  <ul class="collection col s12 m5">
+                    <li class="collection-item">Kamagong Hottie Hotel</li>
+                    <li class="collection-item">Nusa Dua, Indonesia</li>
+                    <li class="collection-item">
+                      <span>8.3</span>
+                      <span><strong>Very Good !</strong> (9683 Reviews)</span>
+                    </li>
+                  </ul>
+                  <!-- Hotel Rooms & Prices -->
+                  <ul class="collection col s12 m3 center">
+                    <li class="collection-item" value="85000">
+                      <a href="#!" id="val7">Supreme<br>&#8369; 85,000</a>
+                    </li>
+                    <li class="collection-item" value="60000">
+                      <a href="#!" id="val8">Deluxe<br>&#8369; 60,000</a>
+                    </li>
+                    <li class="collection-item" value="40000">
+                      <a href="#!" id="val9">Prime<br>&#8369; 40,000</a>
+                    </li>
+                  </ul>
+                  <ul class="col s12 m4 collection center">
+                    <li class="collection-item" id="p3"></li>
+                    <li class="collection-item"><a class="waves-effect waves-red btn" id="show3">VIEW DETAILS</a></li>
+                    <li class="collection-item"><a class="waves-effect waves-yellow btn">BOOK NOW !</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Details Navigation -->
+            <div id="info3" class="hide">
+              <div class="card-tabs ">
+                <ul class="tabs col s1 m1">
+                  <li class="tab"><a href="#nav7">INFO</a></li>
+                  <li class="tab"><a class="active" href="#nav8">PHOTOS</a></li>
+                  <li class="tab"><a href="#nav9">REVIEWS</a></li>
+                </ul>
+                <i class="material-icons close hide" id="close3">close</i>
+              </div>
+              <div class="card-content grey lighten-4" id="detail3">
+                <div id="nav7">Test 1</div>
+                <div id="nav8">
+                  <!-- Section: Gallery -->
+                  <section id="gallery" class="col s12 m12 card-content section-gallery center">
+                    <h4 class="center"><span class="teal-text">Photo </span> Gallery</h4>
+                    <div class="row card-panel teal">
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/kamagong1.jpg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/kamagong2.jpg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/kamagong3.jpg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/7.jpeg" alt="">
+                      </div>
+                    </div>
+                    <div class="row card-panel amber">
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/8.jpeg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/9.jpeg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/a.jpeg" alt="" style="height: 113px; width: 242px">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/b.jpeg" alt="">
+                      </div>
+                    </div>
+                    <div class="row card-panel amber">
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="img/c.jpeg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="img/d.jpeg" alt="" style="height: 113px; width: 242px">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="img/e.jpeg" alt="" style="height: 113px; width: 242px">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="img/f.jpeg" alt="">
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div id="nav9">Test 3</div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Hotels List -->
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <img src="lib/img/sogo1.jpg" alt="..." class="col s12 m3">
+                <div class="col s12 m9">
+                  <ul class="collection col s12 m5">
+                    <li class="collection-item">Sogo Careless Whisper Hotel & Resort</li>
+                    <li class="collection-item">Nusa Dua, Indonesia</li>
+                    <li class="collection-item">
+                      <span>7.8</span>
+                      <span><strong>Good !</strong> (11455 Reviews)</span>
+                    </li>
+                  </ul>
+                  <!-- Hotel Rooms & Prices -->
+                  <ul class="collection col s12 m3 center">
+                    <li class="collection-item" value="85000">
+                      <a href="#!" id="val10">Supreme<br>&#8369; 85,000</a>
+                    </li>
+                    <li class="collection-item" value="60000">
+                      <a href="#!" id="val11">Deluxe<br>&#8369; 60,000</a>
+                    </li>
+                    <li class="collection-item" value="40000">
+                      <a href="#!" id="val12">Prime<br>&#8369; 40,000</a>
+                    </li>
+                  </ul>
+                  <ul class="col s12 m4 collection center">
+                    <li class="collection-item" id="p4"></li>
+                    <li class="collection-item"><a class="waves-effect waves-red btn" id="show4">VIEW DETAILS</a></li>
+                    <li class="collection-item"><a class="waves-effect waves-yellow btn">BOOK NOW !</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Details Navigation -->
+            <div id="info4" class="hide">
+              <div class="card-tabs">
+                <ul class="tabs col s1 m1">
+                  <li class="tab"><a href="#nav10">INFO</a></li>
+                  <li class="tab"><a class="active" href="#nav11">PHOTOS</a></li>
+                  <li class="tab"><a href="#nav12">REVIEWS</a></li>
+                </ul>
+                <i class="material-icons close hide" id="close4">close</i>
+              </div>
+              <div class="card-content grey lighten-4" id="detail4">
+                <div id="nav10">Test 1</div>
+                <div id="nav11">
+                  <!-- Section: Gallery -->
+                  <section id="gallery" class="col s12 m12 card-content section-gallery center">
+                    <h4 class="center"><span class="teal-text">Photo </span> Gallery</h4>
+                    <div class="row card-panel teal">
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/sogo1.jpg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/sogo2.jpg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/sogo3.jpg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/g.jpeg" alt="">
+                      </div>
+                    </div>
+                    <div class="row card-panel teal">
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/h.jpeg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/i.jpeg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/j.jpeg" alt="">
+                      </div>
+                      <div class="col s12 m3">
+                        <img class="materialboxed responsive-img" src="lib/img/k.jpeg" alt="">
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div id="nav12">Test 3</div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </main>
+        <!-- FOOTER -->
+        <footer class="page-footer grey darken-3">
+            <div class="container">
+              <div class="row">
+                <div class="col s12 m6">
+                  <h5 class="grey-text text-lighten-3">About Us</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, reprehenderit. Error saepe nesciunt, commodi
+                    eos quae libero? Quis, explicabo unde!</p>
+                </div>
+                <div class="col s12 m4 offset-m2">
+                  <h5 class="grey-text text-lighten-3">Links</h5>
+                  <ul>
+                    <li>
+                      <a href="" class="white-text">Link 1</a>
+                    </li>
+                    <li>
+                      <a href="" class="white-text">Link 2</a>
+        
+                    </li>
+                    <li>
+                      <a href="" class="white-text">Link 3</a>
+        
+                    </li>
+                    <li>
+                      <a href="" class="white-text">Link 4</a>
+        
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer-copyright grey darken-2">
+              <div class="container">
+                MCGen &copy; 2019
+                <a href="#" class="grey-text text-lighten-3 right">Terms & Conditions</a>
+              </div>
+            </div>
+          </footer>
+        
+        
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <!-- Vanilla Js -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+          
+    <!-- Oher Scripts -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('.tabs').tabs();
+        // Init Side nav
+        $('.button-collapse').sideNav();
+      });
+    
+      $("#close1").on("click", function(){
+          $("#close1").addClass("hide");
+          $("#info1").addClass("hide");
+      });
+    
+      $("#show1").on("click", function(){
+          $("#info1").removeClass("hide");
+          $("#close1").removeClass("hide");
+      });
+    
+      $("#close2").on("click", function(){
+          $("#close2").addClass("hide");
+          $("#info2").addClass("hide");
+      });
+    
+      $("#show2").on("click", function(){
+          $("#info2").removeClass("hide");
+          $("#close2").removeClass("hide");
+      });
+    
+      $("#close3").on("click", function(){
+          $("#close3").addClass("hide");
+          $("#info3").addClass("hide");
+      });
+    
+      $("#show3").on("click", function(){
+          $("#info3").removeClass("hide");
+          $("#close3").removeClass("hide");
+      });
+    
+      $("#close4").on("click", function(){
+          $("#close4").addClass("hide");
+          $("#info4").addClass("hide");
+      });
+    
+      $("#show4").on("click", function(){
+          $("#info4").removeClass("hide");
+          $("#close4").removeClass("hide");
+      });
+    
+    </script>
+    </body>
+    </html>
+
+  

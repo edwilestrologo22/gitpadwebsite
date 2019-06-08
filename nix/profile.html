@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/nix.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Profile</title>
+</head>
+    <body>
+         <!-- RESPONSIVE WITH SIDE MENU -->
+    
+    <div class="navbar-fixed">
+        <nav class="blue darken-4 #ff8f00 amber darken-3">
+              <a href="#" class="brand-logo"> <img src="img/git.png" class="Responsive-img circle" style="width: 50px; height: 50px;"> GitPad</a>
+             
+          <div class="container">
+            <div class="nav-wrapper">
+              <a class="button-collapse" data-activates="mobile-nav" href="#">
+                <i class="material-icons">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down">
+                  
+                  <!-- DROPDOWN TRIGGER -->
+                <li>
+                      <a class="dropdown-button" data-activates="my-dropdown" href="#!">Browse
+                        <i class="material-icons right">arrow_drop_down</i>
+                      </a>
+                    </li>
+                <li>
+                    
+                  <a href="#">Writer opportunities</a>
+                </li>
+                <li>
+                      <a class="dropdown-button" data-activates="my-dropdown" href="#!">Community
+                              <i class="material-icons right">arrow_drop_down</i>
+                      </a>
+                </li>
+               
+                <li>
+                      <i class="material-icons">search</i>
+                      <li>
+                      <div class="input-field inline" >
+                         
+                        <input id="users" type="text"  placeholder="Search">
+                       
+                      </div>
+                  </li>
+                </li>
+                
+                <li>
+                   
+                     
+                  <a class="dropdown-buttonA" data-activates="my-dropdownA" href="#!">
+                      <img src="img/1.png" alt="" class="Responsive-img circle" style="height: 40px; width: 40px">
+                      Edwil<i class="material-icons right">arrow_drop_down</i>
+                  </a>
+            </li>
+            
+              </ul>
+              
+              <ul id="mobile-nav" class="side-nav orange">
+                      <li><div class="user-view">
+                        <div class="background"><img src="images/office.jpg"></div>
+                        <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                        <a href="#name"><span class="white-text name">John Doe</span></a>
+                        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                      </div></li>
+                      <li><a href="#!"><i class="material-icons">dashboard</i>Dashboard</a></li>
+                      <li><a href="#!">What's New?</a></li>
+                      <li><div class="divider"></div></li>
+                      <li>
+                        <form>
+                          <div class="input-field">
+                            <input type="search" id="search" required>
+                            <label for="search" class="label-icon">
+                              <i class="material-icons">search</i>
+                            </label>
+                            <i class="material-icons">close</i>
+                          </div>
+                        </form>
+                      </li>
+                      <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                          <li><a class="collapsible-header">Browse<i class="material-icons">arrow_drop_down</i></a>
+                            <div class="collapsible-body">
+                              <ul>
+                                <li><a href="#!">Action</a></li>
+                                <li><a href="#!">Adventure</a></li>
+                                <li><a href="#!">Anime</a></li>
+                                <li><a href="#!">Horror</a></li>
+                                <li><a href="#!">Mystery</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><div class="divider"></div></li>
+                      <li class="no-padding">
+                        <ul class="collapsible collapsible-accordion">
+                          <li><a class="collapsible-header">Account Info<i class="material-icons">arrow_drop_down</i></a>
+                            <div class="collapsible-body">
+                              <ul>
+                                <li><a href="#!">Edit My Profile</a></li>
+                                <li><a href="#!">Account Settings</a></li>
+                                <li><a href="#!">Privacy Settings</a></li>
+                                <li><a href="#!">Logout</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+            
+                    <ul id="mobile-nav" class="side-nav">
+                          <li><div class="user-view">
+                            <div class="background"><img src="images/office.jpg"></div>
+                            <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                            <a href="#name"><span class="white-text name">John Doe</span></a>
+                            <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                          </div></li>
+                          <li><a href="#!"><i class="material-icons">dashboard</i>Dashboard</a></li>
+                          <li><a href="#!">What's New?</a></li>
+                          <li><div class="divider"></div></li>
+                          <li>
+                            <form>
+                              <div class="input-field">
+                                <input type="search" id="search" required>
+                                <label for="search" class="label-icon">
+                                  <i class="material-icons">search</i>
+                                </label>
+                                <i class="material-icons">close</i>
+                              </div>
+                            </form>
+                          </li>
+                          <li class="no-padding">
+                            <ul class="collapsible collapsible-accordion">
+                              <li><a class="collapsible-header">Browse<i class="material-icons">arrow_drop_down</i></a>
+                                <div class="collapsible-body">
+                                  <ul>
+                                    <li><a href="#!">Action</a></li>
+                                    <li><a href="#!">Adventure</a></li>
+                                    <li><a href="#!">Anime</a></li>
+                                    <li><a href="#!">Horror</a></li>
+                                    <li><a href="#!">Mystery</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                          <li><div class="divider"></div></li>
+                          <li class="no-padding">
+                            <ul class="collapsible collapsible-accordion">
+                              <li><a class="collapsible-header">Account Info<i class="material-icons">arrow_drop_down</i></a>
+                                <div class="collapsible-body">
+                                  <ul>
+                                    <li><a href="#!">Edit My Profile</a></li>
+                                    <li><a href="#!">Account Settings</a></li>
+                                    <li><a href="#!">Privacy Settings</a></li>
+                                    <li><a href="#!">Logout</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+        <!-- DROPDOWN MENU For Browse-->
+        <ul id="my-dropdown" class="dropdown-content">
+              <div class="row">
+                  <div class="col s6 m6">
+              <li>
+                <a href="#">Link 1</a>
+              </li>
+              <li>
+                <a href="#">Link 2</a>
+              </li>
+              <li>
+                <a href="#">Link 3</a>
+              </li>
+              <li>
+                <a href="#">Link asdasdasdas3</a>
+              </li>
+                  </div>
+                  <div class="col s6 m6">
+              <li>
+                <a href="#">Link 1</a>
+              </li>
+              <li>
+                <a href="#">Link 2</a>
+              </li>
+              <li>
+                <a href="#">Link 3</a>
+              </li>
+              <li>
+                <a href="#">Link asdasdasdas3</a>
+              </li>
+                  </div>
+              </div>
+          </ul>
+          
+          <div class="col s6 m6" >
+              <ul id="my-dropdown" class="dropdown-content">
+              <li>
+                <a href="#">Link 1</a>
+              </li>
+              <li>
+                <a href="#">Link 2</a>
+              </li>
+              <li>
+                <a href="#">Link 3</a>
+              </li>
+            </ul>
+          </div>
+        <!-- DROPDOWN MENU For Browse-->
+        <ul id="my-dropdown" class="dropdown-content">
+              <div class="row">
+                  <div class="col s6 m6">
+              <li>
+                <a href="#">Link 1</a>
+              </li>
+              <li>
+                <a href="#">Link 2</a>
+              </li>
+              <li>
+                <a href="#">Link 3</a>
+              </li>
+              <li>
+                <a href="#">Link asdasdasdas3</a>
+              </li>
+                  </div>
+                  <div class="col s6 m6">
+              <li>
+                <a href="#">Link 1</a>
+              </li>
+              <li>
+                <a href="#">Link 2</a>
+              </li>
+              <li>
+                <a href="#">Link 3</a>
+              </li>
+              <li>
+                <a href="#">Link asdasdasdas3</a>
+              </li>
+                  </div>
+              </div>
+          </ul>
+          
+          
+        <!-- DROPDOWN MENU For Browse-->
+        <ul id="my-dropdownA" class="dropdown-content">
+              <li>
+                <a href="../nix/profile.html">My Profile</a>
+              </li>
+              <li>
+                <a href="../gitpadFINAL/newsfeed.html">News Feed</a>
+              </li>
+              <li>
+                <a href="../gitpadFINAL/notif.html">Notifications &nbsp; &nbsp;  &nbsp;</a>
+              </li>
+              <li>
+                <a href="#">Message</a>
+              </li>
+              <li>
+                <a href="../supermatt/library.html">Library</a>
+              </li>
+              <li>
+                <a href="#">Setting</a>
+              </li>
+              <li>
+                <a href="../index.html">Log-out</a>
+              </li>
+             
+                
+          </ul>
+        <!-- Showcase -->
+        <div class="showcase">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m10 push-m1 deep-purple-text">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- section:profile -->
+        <section id="section-profiles" class="section section profiles">
+        <!-- <div class="container"> -->
+            <div class="row">
+                <div class="card-image col s12 m3 offset-3 center">
+                        
+                </div>
+                <div class="col s12 m12 transparent center" style="margin-top: -35px; margin-left: 0">
+                    <div class="card" style="padding-top: 0; margin-top: 0; ">
+                        <ul class="tabs">
+                                <li class=" col s12 m2">
+                                    <a href="#" class="black-text"><b>10</b></a><br>
+                                    <a href="#" class="black-text"><b>READS</b></a>
+                                </li>
+                                <li class="col s12 m2">
+                                    <a href="#" class="black-text"><b>5</b></a><br>
+                                    <a href="#" class="black-text"><b>WORKS</b></a>
+                                </li>
+                                
+                                <li class="col s12 m3">
+                                    <a href="#" class="black-text"><b>12k</b></a><br>
+                                    <a href="#" class="black-text"><b>FOLLOWERS</b></a>
+                                </li>
+                                <li class="col s12 m3">
+                                    <a href="#" class="black-text"><b>650</b></a><br>
+                                    <a href="#" class="black-text"><b>FOLLWINGS</b></a>
+                                </li>
+                                <li class="col s12 m2">
+                                    <a href="#" class="black-text"><b>650</b></a><br>
+                                    <a href="#" class="black-text"><b>FAVORITES</b></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <div class="button center" style="padding-top: 5px">
+                        <a href="#" class="btn btn-effects btn-waves orange ">Start Reading</a>
+                        <a href="#" class="btn btn-effects btn-waves orange">My List</a>
+                        <a href="#" class="btn btn-effects btn-waves orange ">Following</a>
+                        <a href="#"><i class="material-icons">&nbsp;&nbsp; settings</i>&nbsp;Edit Profile</a>       
+                </div>
+            </div>
+        </section>
+        
+        <!-- section 1.5 -->
+        <section class="section section-about">
+            <div class="container white darken-4" style="border: 2px solid orange; padding: 10px">
+                <div class="row">
+                    <div class="col s12 m5">
+                        <div class="about-img center">
+                                <img id="pic" src="img/person3.jpg" alt="" class="Responsive-img circle" style="height: 200px;padding-bottom: 30px; position: relative; top: 10px">
+                                <br>
+                                <span class="center">Clown Ceasar</span><br>
+                                <a href="#" class="center">@Ceasarclown</a><br>
+                                <h6 class="black-text">About</h6>
+                                <p class="black-text">Hi i'm Ceasar Clown. If you enjoyed reading anime book you can add me at facebook</p>
+                                <!-- icon -->
+                                <ul id="icons">
+                                    <li><a class="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a class="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a class="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                    <li><a class="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    <li><a class="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                </ul>
+                        </div>
+                    </div>  
+                    <div class="col s12 m7">
+                        <h2 class="red-text"> About</h2>
+                        <p class="Black-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta officia atque ad accusamus incidunt iure, tempore at, eos quas sit doloremque maiores rerum commodi? Deleniti officia quasi cum deserunt natus?</p>
+                        <br>
+                        <div class="col s12 m6 hide-on-med-and-down">
+                            <ul class="black-text" style=" text-align: left">
+                                    <li>Gender</li><br>
+                                    <li>Birthday</li><br>
+                                    <li>Contact</li><br>
+                                    <li>Hometown</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="black-text" style="text-align: left">
+                                    <li> Male</li><br>
+                                    <li> June 28 1996</li><br>
+                                    <li> 09777601791</li><br>
+                                    <li> Quezon City</li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- SECTION 2 -->
+        <section class="section profile2">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m8">
+                        <div class="card">
+                            <div class="field-input">
+                                <div class="collection-item avatar">
+                                    <!-- <img src="img/person3.jpg" alt="" class="circle left" style="width: 100px"> -->
+                                    <textarea name="Add Post" id="" cols="30" rows="10" style="width: 20em; height: 5em; margin-left: 25px; margin-top: 25px">
+                                        </textarea><button class="blue">Comments</button>
+                                </div>
+                            </div>
+                    
+                        <br>
+                        
+                        <ul class="collection with-header latest-comments whitesmoke">
+                            <li class="collection-item avatar">
+                                <img src="img/person1.jpg" alt="" class="circle">
+                                <span class="title left"><a href="#"><b>John Doe Devance</b></a></span><br>
+                                <p class="left">Nakita kita. sa isang Magazine</p><br>
+                                <a href="#" class="left"><i class="material-icons">thumb_up</i> like &nbsp; Report</a>
+                            </li>
+                            <li class="collection-item avatar">
+                                <img src="img/person2.jpg" alt="" class="circle"><span class="title left">
+                                <a href="#"><b>Walter O' Brian</b></a>
+                                </span><br>
+                                <p class=" left">Dilaw ang yung suot at buhok mo'y green </p><br>
+                                <a href="#" class="left">like &nbsp; Report</a>
+                            </li>
+                            <li class="collection-item avatar">
+                                <img src="img/person3.jpg" alt="" class="circle">
+                                <span class="title left"><a href="#"><b>Karrie Miya</b></a></span><br> 
+                                <p class="left"> Jopay Kamusta ka na!  </p><br>                                    <a href="#" class="left"><i class="material-icons">thumb_up</i>like &nbsp; Report</a>
+                            </li>    
+                            
+                        </ul>
+                        <a href="#" class="center">See more</a>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">    
+                        <a href="#"><i class="material-icons">&nbsp;&nbsp; settings</i>&nbsp;Edit Profile</a>
+                            <br>
+                
+                            <br><span class="title"><b>&nbsp;&nbsp;&nbsp;Recent Read</b><br></span>
+                                <div class="row">
+                                    <div class="col s4">
+                                        <img src="img/m1.jpg" id="img" class="materialboxed" style="height: 70px;width: 50px">
+                                        </div>
+                                        <div class="col s4 m8">
+                                            <p>One Piece</p>
+                                        </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col s12 m4">
+                                            <img src="img/8.jpg" id="img" class="materialboxed" style="height: 70px; width: 50px">
+                                        </div>
+                                        <div class="col s12 m8">
+                                            <p>One Piece</p>
+                                        </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col s4">
+                                            <img src="img/m6.jpg" id="img" class="materialboxed" style="height: 70px; width: 50px">
+                                        </div>
+                                        <div class="col s12 m8">
+                                            <p>One Piece</p>
+                                        </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col s12 m4">
+                                            <img src="img/m9.jpg" id="img" class="materialboxed"  style="height: 70px; width: 50px">
+                                        </div>
+                                        <div class="col s12 m8">
+                                            <p>One Piece</p>
+                                            <br>
+                                            <a href="#">see more</a>
+                                        </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <div class="col s12 center" style="padding:15px"><h5><b>My Collection</b></h5></div>
+
+        <!-- Recent Post -->
+        <div class="row">
+            <!-- <span class="text-a">RECENT READ</span> -->
+           <div class="container">
+            <div class="box col s4">
+                <div class="figure">
+                    <img src="img/m1.jpg" alt="">
+                    <div class="caption">
+                        <div class="about">
+                            <h2>One Piecd</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quis a, minima eaque natus dignissimos. Voluptatibus facilis illum similique incidunt quaerat minus aliquam eos reiciendis, id quam suscipit quas quia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box col s4">
+                <div class="figure">
+                    <img id="img" src="img/m2.png" alt="">
+                    <div class="caption">
+                        <div class="about">
+                            <h2>One Piecd</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quis a, minima eaque natus dignissimos. Voluptatibus facilis illum similique incidunt quaerat minus aliquam eos reiciendis, id quam suscipit quas quia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box col s4">
+                <div class="figure">
+                    <img src="img/m3.jpg" alt="">
+                    <div class="caption">
+                        <div class="about">
+                            <h2>One Piece</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quis a, minima eaque natus dignissimos. Voluptatibus facilis illum similique incidunt quaerat minus aliquam eos reiciendis, id quam suscipit quas quia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        
+                                
+                    
+  
+    <!-- Modal  -->
+
+    
+
+
+    
+
+
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          $('.dropdown-button').dropdown({
+            constrainWidth: false,
+            hover: true,
+            belowOrigin: true,
+            alignment: 'left'
+          });
+          $('.dropdown-buttonA').dropdown({
+            constrainWidth: false,
+            hover: true,
+            belowOrigin: true,
+            alignment: 'left'
+          });
+    
+          // JAVASCRIPT START HERE //
+    
+          $('.button-collapse').sideNav();
+          $('.sidenav').sideNav();
+    
+    
+        });
+      </script>
+</body>
+
+</html> 

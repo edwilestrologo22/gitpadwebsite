@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/main.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitPad</title>
+</head>
+
+<body>
+
+  <!-- RESPONSIVE WITH SIDE MENU -->
+    
+    <div class="navbar-fixed">
+  <nav class="blue darken-4 #ff8f00 amber darken-3">
+        <a href="#" class="brand-logo">GitPad</a>
+    <div class="container">
+      <div class="nav-wrapper">
+        <a class="button-collapse" data-activates="mobile-nav" href="#">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+            
+            <!-- DROPDOWN TRIGGER -->
+          <li>
+                <a class="dropdown-button" data-activates="my-dropdown" href="#!">Browse
+                  <i class="material-icons right">arrow_drop_down</i>
+                </a>
+              </li>
+          
+          <li>
+                <i class="material-icons">search</i>
+                <li>
+                <div class="input-field inline" >
+                   
+                  <input id="users" type="text"  placeholder="Search">
+                 
+                </div>
+            </li>
+          </li>
+          <!-- ICON LINK -->
+          <li class="right"><a class="dropdown-button" data-activates="my-dropdown2" href="#!">&nbsp;
+              <img src="img/person3.jpg" alt="" class="Responsive-img circle" style="height: 40px; width: 40px">
+          turk@gmail.com<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+        
+        <ul id="mobile-nav" class="side-nav">
+                <li><div class="user-view">
+                  <div class="background"><img src="images/office.jpg"></div>
+                  <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                  <a href="#name"><span class="white-text name">John Doe</span></a>
+                  <a href="#email"><span class="white-text email">turk@gmail.com</span></a>
+                </div></li>
+                <li><a href="#!"><i class="material-icons">dashboard</i>Dashboard</a></li>
+                <li><a href="#!">What's New?</a></li>
+                <li><div class="divider"></div></li>
+                <li>
+                  <form>
+                    <div class="input-field">
+                      <input type="search" id="search" required>
+                      <label for="search" class="label-icon">
+                        <i class="material-icons">search</i>
+                      </label>
+                      <i class="material-icons">close</i>
+                    </div>
+                  </form>
+                </li>
+                <li class="no-padding">
+                  <ul class="collapsible collapsible-accordion">
+                    <li><a class="collapsible-header">Browse<i class="material-icons">arrow_drop_down</i></a>
+                      <div class="collapsible-body">
+                        <ul>
+                          <li><a href="#!">Action</a></li>
+                          <li><a href="#!">Adventure</a></li>
+                          <li><a href="#!">Anime</a></li>
+                          <li><a href="#!">Horror</a></li>
+                          <li><a href="#!">Mystery</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li><div class="divider"></div></li>
+                <li class="no-padding">
+                  <ul class="collapsible collapsible-accordion">
+                    <li><a class="collapsible-header">Account Info<i class="material-icons">arrow_drop_down</i></a>
+                      <div class="collapsible-body">
+                        <ul>
+                          <li><a href="#!">My Profile</a></li>
+                          <li><a href="#!">News Feed</a></li>
+                          <li><a href="buybook.html">Buy Books</a></li>
+                          <li><a href="#!">Account Settings</a></li>
+                          <li><a href="#!">Privacy Settings</a></li>
+                          <li><a href="#!">Logout</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+      
+              <ul id="mobile-nav" class="side-nav">
+                    <li><div class="user-view">
+                      <div class="background"><img src="images/office.jpg"></div>
+                      <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
+                      <a href="#name"><span class="white-text name">John Doe</span></a>
+                      <a href="#email"><span class="white-text email">turk@gmail.com</span></a>
+                    </div></li>
+                    <li><a href="#!"><i class="material-icons">dashboard</i>Dashboard</a></li>
+                    <li><a href="#!">What's New?</a></li>
+                    <li><div class="divider"></div></li>
+                    <li>
+                      <form>
+                        <div class="input-field">
+                          <input type="search" id="search" required>
+                          <label for="search" class="label-icon">
+                            <i class="material-icons">search</i>
+                          </label>
+                          <i class="material-icons">close</i>
+                        </div>
+                      </form>
+                    </li>
+                    <li class="no-padding">
+                      <ul class="collapsible collapsible-accordion">
+                        <li><a class="collapsible-header">Browse<i class="material-icons">arrow_drop_down</i></a>
+                          <div class="collapsible-body">
+                            <ul>
+                              <li><a href="#!">Action</a></li>
+                              <li><a href="#!">Adventure</a></li>
+                              <li><a href="#!">Anime</a></li>
+                              <li><a href="#!">Horror</a></li>
+                              <li><a href="#!">Mystery</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><div class="divider"></div></li>
+                    <li class="no-padding">
+                      <ul class="collapsible collapsible-accordion">
+                        <li><a class="collapsible-header">Account Info<i class="material-icons">arrow_drop_down</i></a>
+                          <div class="collapsible-body">
+                            <ul>
+                              <li><a href="#!">My Profile</a></li>
+                              <li><a href="#!">News Feed</a></li>
+                              <li><a href="buybook.html">Buy Books</a></li>
+                              <li><a href="#!">Account Settings</a></li>
+                              <li><a href="#!">Privacy Settings</a></li>
+                              <li><a href="#!">Logout</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+  <!-- DROPDOWN MENU For Browse-->
+  <ul id="my-dropdown" class="dropdown-content">
+        <div class="row">
+            <div class="col s6 m6">
+        <li>
+          <a href="#">Link 1</a>
+        </li>
+        <li>
+          <a href="#">Link 2</a>
+        </li>
+        <li>
+          <a href="#">Link 3</a>
+        </li>
+        <li>
+          <a href="#">Link asdasdasdas3</a>
+        </li>
+            </div>
+            <div class="col s6 m6">
+        <li>
+          <a href="#">Link 1</a>
+        </li>
+        <li>
+          <a href="#">Link 2</a>
+        </li>
+        <li>
+          <a href="#">Link 3</a>
+        </li>
+        <li>
+          <a href="#">Link asdasdasdas3</a>
+        </li>
+            </div>
+        </div>
+    </ul>
+    
+    <div class="col s6 m6" >
+        <ul id="my-dropdown" class="dropdown-content">
+        <li>
+          <a href="#">Link 1</a>
+        </li>
+        <li>
+          <a href="#">Link 2</a>
+        </li>
+        <li>
+          <a href="#">Link 3</a>
+        </li>
+      </ul>
+    </div>
+ 
+    <!-- DropDown menu Profile -->
+    <ul id="my-dropdown2" class="dropdown-content">
+        <li><a href="#!">My Profile</a></li>
+        <li><a href="#!">News Feed</a></li>
+        <li><a href="buybook.html">Buy Books</a></li>
+        <li><a href="#!">Account Settings</a></li>
+        <li><a href="#!">Privacy Settings</a></li>
+        <li><a href="#!">Logout</a></li>
+      </ul>
+    
+   
+  
+
+  
+  <!-- Main -->
+  <main>
+        <!-- Section 1: Paid Stories -->
+        <div class="container">
+          <div class="row">
+            <h3>Paid Stories</h3>
+            <p>Become a supporter and help your favourite writers earn money.</p>
+          </div>
+          <div class="row"> 
+            <div class="col s12 m6">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="lib/img/sofitel1.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+            </div>
+    
+            <div class="col s12 m6">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="lib/img/sofitel1.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+            </div>
+    
+            <div class="col s12 m6">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="lib/img/sofitel1.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+            </div>
+    
+            <div class="col s12 m6">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="lib/img/sofitel1.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <hr>
+          <!-- Section 2: Recommendations -->
+          <div class="row">
+            <h3>Recommendations</h3>
+            <p>A new set of stories, only for you. ♥</p>
+          </div>
+          <div class="row"> 
+            <div class="col s12 m6">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="lib/img/sofitel1.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+            </div>
+    
+            <div class="col s12 m6">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="lib/img/sofitel1.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+            </div>
+    
+            <div class="col s12 m6">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="lib/img/sofitel1.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+            </div>
+    
+            <div class="col s12 m6">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="lib/img/sofitel1.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <hr>
+    
+          <!-- Section 3: Editor's Choice -->
+          <div class="row">
+          <ul class="collection" style="border: none;">
+            <li class="collection-item avatar">
+              <img src="lib/img/sogo1.jpg" class="circle">
+              <span class="title" style="display: flex;">Editor's Choice <i class="material-icons">keyboard_arrow_right</i></span>
+              <p>A reading list by Wattpad The Great Bot for one and only you. ♥</p>
+              <a href="#!" class="secondary-content"><button style="display: flex;">Follow <i class="material-icons" style="font-size: 21px;">add</i></button></a>
+            </li>
+          </ul>
+          </div>
+          <div class="row"> 
+            <div class="col s12 m6">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="lib/img/sofitel1.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+            </div>
+    
+            <div class="col s12 m6">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="lib/img/sofitel1.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+            </div>
+    
+            <div class="col s12 m6">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="lib/img/sofitel1.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+            </div>
+    
+            <div class="col s12 m6">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="lib/img/sofitel1.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+    
+          <!-- Section 4: Tags -->
+          <div class="row">
+            <h3>Hottest Stories tagged #wattyu2019</h3>
+            <p style="display: flex;">A tag for a hot night. <i class="material-icons" style="font-size: 20px;">whatshot</i></p>
+          </div>
+          <div class="row"> 
+            <div class="col s12 m6">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="lib/img/sofitel1.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+            </div>
+    
+            <div class="col s12 m6">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="lib/img/sofitel1.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+            </div>
+    
+            <div class="col s12 m6">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="lib/img/sofitel1.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+            </div>
+    
+            <div class="col s12 m6">
+            <div class="card horizontal">
+              <div class="card-image">
+                <img src="lib/img/sofitel1.jpg">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <hr>
+    
+    
+        </div>
+      </main>
+        
+
+
+
+
+  
+
+
+  <!-- Footer -->
+  <footer class="page-footer #ff8f00 amber darken-4">
+    
+    <div class="footer-copyright #ff8f00 amber darken-4">
+      
+        GitPad &copy; 2019 <br>Terms & Conditions
+     
+    </div>
+  </footer>
+
+
+  <!-- Login Modal -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <h4>Account Login</h4>
+      <p>Login to access your account dashboard</p>
+      <form>
+        <div class="input-field">
+          <input type="email" id="email">
+          <label for="email">Email</label>
+        </div>
+        <div class="input-field">
+          <input type="password" id="password">
+          <label for="password">Password</label>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close btn grey">
+        <i class="fa fa-sync"></i> Reset Password</a>
+      <a href="#!" class="modal-action modal-close btn purple">
+        <i class="fa fa-lock"></i> Login</a>
+    </div>
+  </div>
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!-- Vanilla Js -->
+<script type="text/javascript" src="assets/js/script.js"></script>  
+  <script>
+    $(document).ready(function () {
+      $('.carousel.carousel-slider').carousel({ fullWidth: true });
+      $('.button-collapse').sideNav();
+      $('.modal').modal();
+    });
+     //carousel
+     $('.carousel').carousel();
+   
+  </script>
+
+  <!-- Oher Scripts -->
+<script type="text/javascript">
+	$(document).ready(function(){
+    // Init Side nav
+    // $('.button-collapse').sideNav();
+    $('.sidenav').sideNav();
+    $('.dropdown-button').dropdown({
+      constrainWidth: false,
+      hover: false,
+      belowOrigin: true,
+      alignment: 'left'
+    });
+
+  });
+  
+</script>
+</body>
+
+</html>
