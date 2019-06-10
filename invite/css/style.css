@@ -1,28 +1,4 @@
-/* html {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-} */
-/* .btn{
-  margin-top: 30%;
-  }
-  input[type="submit"]{
-  width: 60%;
-  margin-top: 25px;
-  }
-  .modal-close{
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  margin: 0;
-  padding: 0;
-} */
-/* .modal-content {
-  background: url("../img/img2.jpg");
-  object-fit: 50%;
-  object-position: center;
-  width: 100%;
-  height: 100%;
-  background-position: cover;
-} */
+
 .row1{
   background-color: black;
 }
@@ -70,7 +46,7 @@
   font-weight: bold;
   border: 3px solid #f1f1f1;
   position: absolute;
-  top: 63%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -93,13 +69,56 @@
   padding: 20px;
   text-align: center;
 }
-h2 {
-  font-family: forte;
-  font-size: 40px;
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+ /* text-align: center; */
+ /* position: absolute; */
+ top: 50%;
+ left: 50%;
+width: 100%;
+}
+
+.container span {
+  text-transform: uppercase;
+  display: block;
+}
+.invite1{
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  /* margin-bottom: 20px; */
+  background: black;
+  position: relative;
+  animation: text 3s 1;
 }
 .invite2 {
-  font-family: forte;
-  font-size: 25px;
+  text-color: black;
+  font-size: 30px;
+  /* color: #6ab04c; */
 }
+
+@keyframes text {
+  0%{
+    color: black;
+    margin-bottom: -40px;
+  }
+  30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
+
+
 
 
